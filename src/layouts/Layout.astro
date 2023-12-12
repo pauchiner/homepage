@@ -1,0 +1,34 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Pau García Chiner official webpage." />
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Pau García Chiner</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  @import '../styles/fonts.css';
+  @import '../styles/colors.css';
+  @import '../styles/overrides.css';
+
+  html {
+    background: var(--background);
+    font-family: 'Poppins';
+    color: var(--text);
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    margin: 0;
+  }
+</style>
