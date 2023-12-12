@@ -8,8 +8,8 @@
     "lint": "eslint",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
-    "prettier": "prettier -w ."
+    "format": "prettier -w .",
+    "preview": "astro preview"
   },
   "dependencies": {
     "astro": "4.0.4"
