@@ -7,12 +7,15 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "prettier": "prettier -w ."
   },
   "dependencies": {
     "astro": "4.0.4"
   },
   "devDependencies": {
+    "prettier": "3.1.1",
+    "prettier-plugin-astro": "0.12.2",
     "typescript": "5.3.3"
   }
 }
