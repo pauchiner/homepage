@@ -6,6 +6,8 @@
       "components/*": ["src/components/*"],
       "sections/*": ["src/sections/*"],
       "layouts/*": ["src/layouts/*"]
-    }
+    },
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
   }
 }
