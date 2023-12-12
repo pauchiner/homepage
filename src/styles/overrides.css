@@ -1,0 +1,24 @@
+input {
+  caret-color: var(--primary);
+}
+
+::selection {
+  color: var(--text);
+  background: var(--primary);
+}
+
+::-moz-selection {
+  color: var(--text);
+  background: var(--primary);
+}
+
+*:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  background: var(--background);
+}
