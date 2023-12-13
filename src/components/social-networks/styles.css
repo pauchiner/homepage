@@ -1,0 +1,11 @@
+#social-networks {
+  gap: 22px;
+  display: flex;
+  padding-left: 20px;
+}
+
+@media (max-width: 550px) {
+  #social-networks {
+    gap: 11px;
+  }
+}
