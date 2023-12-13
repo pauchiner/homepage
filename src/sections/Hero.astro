@@ -1,0 +1,70 @@
+---
+import SocialNetworks from 'components/social-networks';
+import ArrowButton from 'components/buttons/arrow';
+import Avatar from 'components/avatar';
+---
+
+<header>
+  <Avatar />
+  <h1>Pau García Chiner</h1>
+  <h2>Full-Stack Developer</h2>
+  <p>Lorem ipsum dolor sit amet consectetur. Tempor posuere nulla.</p>
+  <SocialNetworks />
+  <ArrowButton />
+</header>
+
+<style>
+  header {
+    display: flex;
+    height: 100vh;
+    position: relative;
+    flex-direction: column;
+  }
+
+  h1 {
+    margin: 0;
+    height: 64px;
+    font-weight: 700;
+    padding-left: 20px;
+    font-size: 2.986rem;
+    color: var(--accent);
+  }
+
+  h2 {
+    margin: 0;
+    height: 48px;
+    font-weight: 400;
+    user-select: none;
+    color: var(--text);
+    padding-left: 20px;
+    font-size: 1.728rem;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+  }
+
+  p {
+    font-weight: 400;
+    margin: 39px 0px;
+    text-wrap: pretty;
+    color: var(--text);
+    font-size: 1rem;
+    padding-left: 20px;
+    max-width: 500px;
+  }
+
+  @media (max-width: 550px) {
+    header {
+      height: auto;
+    }
+
+    h1 {
+      font-size: 2.027rem;
+      height: 36px;
+    }
+
+    h2 {
+      font-size: 1.423rem;
+      height: 24px;
+    }
+  }
+</style>
