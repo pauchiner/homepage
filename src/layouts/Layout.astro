@@ -17,18 +17,19 @@
   @import '../styles/overrides.css';
 
   html {
-    background: var(--background);
-    font-family: 'Poppins';
-    color: var(--text);
-    height: 100%;
     margin: 0;
+    display: flex;
+    color: var(--text);
+    font-family: 'Poppins';
+    justify-content: center;
+    background: var(--background);
   }
 
   body {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    height: 100%;
     margin: 0;
+    height: 100%;
+    display: flex;
+    max-width: 600px;
+    flex-direction: column;
   }
 </style>
