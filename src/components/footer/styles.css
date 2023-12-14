@@ -10,6 +10,7 @@ footer p {
 }
 
 footer a {
-  color: var(--primary);
+  font-weight: 500;
+  color: var(--accent);
   text-decoration: none;
 }

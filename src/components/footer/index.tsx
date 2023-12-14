@@ -1,6 +1,11 @@
 import Divider from 'components/divider';
 import './styles.css';
 
+interface LinkProps {
+  href: string;
+  children: any;
+}
+
 const Link = (props: LinkProps) => {
   return (
     <a href={props.href} target="_blank">
@@ -12,7 +17,7 @@ const Link = (props: LinkProps) => {
 const Footer = () => {
   return (
     <footer>
-      <Divider margins={false} />
+      <Divider />
       <p>
         Designed with <Link href="https://figma.com">Figma</Link>, Built with{' '}
         <Link href="https://astro.build">Astro</Link> and{' '}
