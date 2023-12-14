@@ -1,6 +1,8 @@
 module.exports = {
+  root: true,
+  parser: "@typescript-eslint/parser",
   overrides: [
-    // Configuration for `.astro` file.
+    // Configuration for `.astro` files.
     {
       files: ['*.astro'],
       plugins: ['astro'],
@@ -25,7 +27,6 @@ module.exports = {
         'astro/no-set-html-directive': 'error'
       }
     },
-
     // Configuration for the `<script>` tag.
     {
       files: ['**/*.astro/*.js', '*.astro/*.js'],
