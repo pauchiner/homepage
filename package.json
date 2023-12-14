@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
-    "lint": "eslint",
+    "lint": "eslint .",
     "start": "astro dev",
     "build": "astro build",
     "format": "prettier -w .",
