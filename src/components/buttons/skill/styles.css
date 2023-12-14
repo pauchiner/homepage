@@ -8,15 +8,18 @@
 }
 
 .skill-button span {
-  left: 0;
-  bottom: 0;
+  left: 50%;
+  bottom: 0%;
   scale: 0.9;
   opacity: 0;
+  z-index: 999;
   padding: 3px 10px;
   position: absolute;
   color: var(--text);
+  white-space: nowrap;
   border-radius: 16px;
   font-size: var(--sm);
+  transform: translateX(-50%);
   background: var(--background);
   transition: all 0.15s ease-in-out;
   border: 1px solid var(--secondary);
@@ -26,5 +29,5 @@
 .skill-button:hover span {
   scale: 1;
   opacity: 1;
-  translate: 0px 10px;
+  translate: 0px 6px;
 }
