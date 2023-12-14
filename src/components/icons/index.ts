@@ -17,6 +17,7 @@ export {CSSIcon} from './languages/css';
 
 // Other Tools
 export {FirebaseIcon} from './others/firebase';
+export {VercelIcon} from './others/vercel';
 export {GitIcon} from './others/git';
 
 // Socials
