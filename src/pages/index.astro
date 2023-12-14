@@ -1,12 +1,18 @@
 ---
+import Container from 'layouts/Container.astro';
 import Layout from 'layouts/Layout.astro';
 import About from 'sections/About.astro';
 import Hero from 'sections/Hero.astro';
+import Footer from 'components/footer';
 ---
 
 <Layout>
-  <Hero />
-  <main>
-    <About />
-  </main>
+  <Container>
+    <Hero />
+    <main>
+      <About />
+      <About />
+    </main>
+  </Container>
+  <Footer />
 </Layout>
