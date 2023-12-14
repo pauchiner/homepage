@@ -1,0 +1,26 @@
+---
+interface Props {
+  name: string;
+}
+
+const {name} = Astro.props;
+
+if (name == null) {
+  throw new Error(
+    'The `name` property is needed to create a new section component.'
+  );
+}
+---
+
+<section id={name}>
+  <slot />
+</section>
+
+<style>
+  section {
+    display: flex;
+    margin: 64px 0px;
+    position: relative;
+    flex-direction: column;
+  }
+</style>
