@@ -7,9 +7,9 @@ import {
 } from 'components/icons';
 import './styles.css';
 
-const SocialNetworks = () => {
+export const SocialGrid = () => {
   return (
-    <div id="social-networks">
+    <div class="social-grid">
       <SocialButton name="Github" href="https://github.com/pauchiner">
         <GithubIcon />
       </SocialButton>
@@ -28,4 +28,4 @@ const SocialNetworks = () => {
   );
 };
 
-export default SocialNetworks;
+export default SocialGrid;
