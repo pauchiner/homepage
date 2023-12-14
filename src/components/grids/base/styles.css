@@ -1,7 +1,6 @@
 .base-grid {
   gap: 22px;
   display: flex;
-  padding-left: 20px;
 }
 
 @media (max-width: 550px) {
