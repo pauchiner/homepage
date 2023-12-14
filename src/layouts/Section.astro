@@ -10,9 +10,12 @@ if (name == null) {
     'The `name` property is needed to create a new section component.'
   );
 }
+
+const identifier = name.toLowerCase();
 ---
 
-<section id={name}>
+<section id={identifier}>
+  <h3>{name.toUpperCase()}</h3>
   <slot />
 </section>
 
@@ -22,5 +25,12 @@ if (name == null) {
     margin: 64px 0px;
     position: relative;
     flex-direction: column;
+  }
+
+  h3 {
+    margin: 0;
+    font-weight: 600;
+    color: var(--text);
+    font-size: var(--h3);
   }
 </style>
