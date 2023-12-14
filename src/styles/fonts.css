@@ -26,6 +26,7 @@
 h1 {
   font-weight: 700;
   color: var(--text);
+  white-space: nowrap;
   font-size: var(--h1);
 }
 
