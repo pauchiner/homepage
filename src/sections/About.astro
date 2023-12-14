@@ -1,0 +1,35 @@
+---
+import Section from 'layouts/Section.astro';
+import Divider from 'components/divider';
+import {
+  FrameworksSkills,
+  LanguagesSkills,
+  OthersSkills
+} from 'components/grids';
+---
+
+<Section name="about">
+  <h3>ABOUT</h3>
+  <p>
+    Lorem ipsum dolor sit amet consectetur. Sagittis sit donec sed arcu morbi
+    tortor cursus. Neque dui sed justo semper. Feugiat nisi sed vel sit pulvinar
+    lacus. Tincidunt eget viverra at felis vitae dolor.
+  </p>
+  <Divider />
+  <FrameworksSkills />
+  <LanguagesSkills />
+  <OthersSkills />
+</Section>
+
+<style>
+  h3 {
+    font-weight: 600;
+    color: var(--text);
+    font-size: var(--h3);
+    margin: 0px 20px 16px 20px;
+  }
+
+  p {
+    margin: 0px 20px 16px 20px;
+  }
+</style>
