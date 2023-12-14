@@ -1,0 +1,15 @@
+.skills-grid {
+  margin: 0px 20px;
+}
+
+.skills-grid h4 {
+  font-weight: 200;
+  font-size: var(--h4);
+  margin: 0px 0px 8px 0px;
+}
+
+.skills-grid div {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+}
