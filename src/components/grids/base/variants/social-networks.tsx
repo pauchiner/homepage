@@ -5,11 +5,11 @@ import {
   SpotifyIcon,
   TwitterIcon
 } from 'components/icons';
-import './styles.css';
+import BaseGrid from '..';
 
-export const SocialGrid = () => {
+export const SocialNetworks = () => {
   return (
-    <div class="social-grid">
+    <BaseGrid name="social-networks">
       <SocialButton name="Github" href="https://github.com/pauchiner">
         <GithubIcon />
       </SocialButton>
@@ -24,8 +24,8 @@ export const SocialGrid = () => {
         href="https://open.spotify.com/user/21ow4mvhafre3t3w6b6mjuzsq?si=92dbff60a317442f">
         <SpotifyIcon />
       </SocialButton>
-    </div>
+    </BaseGrid>
   );
 };
 
-export default SocialGrid;
+export default SocialNetworks;
