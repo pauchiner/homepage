@@ -1,2 +1,2 @@
 export {SocialButton} from './social';
-export {ArrowButton} from './arrow';
+export {SkillButton} from './skill';
