@@ -1,18 +1,6 @@
 import Divider from 'components/divider';
+import Link from './link';
 import './styles.css';
-
-interface LinkProps {
-  href: string;
-  children: any;
-}
-
-const Link = (props: LinkProps) => {
-  return (
-    <a href={props.href} target="_blank">
-      {props.children}
-    </a>
-  );
-};
 
 const Footer = () => {
   return (
