@@ -1,0 +1,63 @@
+.link-button {
+  cursor: pointer;
+  margin-top: 16px;
+  position: relative;
+  border-radius: 10px;
+  text-decoration: none;
+  align-self: flex-start;
+  background: var(--secondary);
+
+  & .link-border {
+    background: radial-gradient(
+      150px circle at var(--mouse-x) var(--mouse-y),
+      rgba(247, 127, 189, 0.2),
+      transparent 40%
+    );
+    z-index: 1;
+  }
+
+  & .link-content {
+    z-index: 2;
+    margin: 1px;
+    display: flex;
+    padding: 7px 12px;
+    position: relative;
+    align-items: center;
+    border-radius: inherit;
+    justify-content: center;
+    height: calc(100% - 1.5px);
+    background: var(--background);
+
+    & span {
+      color: var(--text);
+      margin-right: 10px;
+    }
+  }
+}
+
+.link-button::before {
+  background: radial-gradient(
+    300px circle at var(--mouse-x) var(--mouse-y),
+    rgba(247, 127, 189, 0.04),
+    transparent 40%
+  );
+  z-index: 3;
+}
+
+.link-button::before,
+.link-button > .link-border {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  content: '';
+  height: 100%;
+  position: absolute;
+  border-radius: inherit;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.link-button:hover::before,
+.link-button:hover > .link-border {
+  opacity: 1;
+}
