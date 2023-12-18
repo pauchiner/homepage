@@ -1,0 +1,47 @@
+.experience-card {
+  padding: 10px;
+  display: flex;
+  cursor: default;
+  color: var(--text);
+  border-radius: 8px;
+  text-decoration: none;
+  border: 1.5px solid transparent;
+  transition: border 0.3s ease-in-out;
+}
+
+.experience-card:hover {
+  border: 1.5px solid var(--secondary);
+}
+
+.experience-card .date {
+  flex: 1;
+  opacity: 0.55;
+  margin: 5px 0px;
+  font-weight: 500;
+  font-size: var(--h6);
+}
+
+.experience-card div {
+  flex: 3;
+}
+
+.experience-card h5 {
+  margin: 0;
+  font-size: var(--h4);
+}
+
+.experience-card h6 {
+  margin: 0;
+  font-weight: 400;
+}
+
+@media (max-width: 550px) {
+  .experience-card {
+    padding: 5px;
+  }
+
+  .experience-card .date {
+    margin-right: 3px;
+    font-size: var(--ss);
+  }
+}
