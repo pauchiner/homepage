@@ -28,9 +28,20 @@ const identifier = name.toLowerCase();
   }
 
   h3 {
-    margin: 0px 0px 16px 0px;
     font-weight: 600;
     color: var(--text);
     font-size: var(--h3);
+    margin: 0px 0px 16px 0px;
+  }
+
+  @media (max-width: 650px) {
+    h3 {
+      top: 0px;
+      z-index: 999;
+      position: sticky;
+      padding: 5px 0px;
+      margin: unset -5px;
+      background: var(--background);
+    }
   }
 </style>
