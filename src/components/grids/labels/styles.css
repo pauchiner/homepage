@@ -1,0 +1,15 @@
+.labels-grid {
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+
+.label {
+  font-size: var(--sm);
+  padding: 3px 10px;
+  position: relative;
+  border-radius: 16px;
+  background: #ed2c721a;
+  border: 1.5px solid #ed2c7273;
+}
