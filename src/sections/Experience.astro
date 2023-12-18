@@ -1,0 +1,28 @@
+---
+import ExperienceGrid from 'components/grids/experience';
+import ExperienceCard from 'components/cards/experience';
+import {LinkButton} from 'components/buttons';
+import Section from 'layouts/Section.astro';
+---
+
+<Section name="experience">
+  <ExperienceGrid>
+    <ExperienceCard
+      date="OCT 2023"
+      title="Laboral Experience Title"
+      subtitle="Junior Developer"
+      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus."
+      labels={['Python', 'Sphinx']}
+    />
+    <ExperienceCard
+      date="2023 — 2022"
+      title="Laboral Experience Title"
+      subtitle="Junior Developer"
+      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus."
+      labels={['Firebase', 'React Native', 'Typescript']}
+    />
+  </ExperienceGrid>
+  <LinkButton href="resume.pdf" target="_blank" client:only>
+    See Full Resume
+  </LinkButton>
+</Section>
