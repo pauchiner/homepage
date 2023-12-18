@@ -4,7 +4,7 @@ interface Props {
 }
 
 const Link = (props: Props) => (
-  <a href={props.href} target="_blank">
+  <a tabindex={-1} href={props.href} target="_blank">
     {props.children}
   </a>
 );
