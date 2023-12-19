@@ -1,0 +1,23 @@
+.project-card {
+  & article {
+    align-items: center;
+
+    & img {
+      width: 200px;
+      height: 200px;
+      margin-right: 17px;
+      border-radius: 10px;
+    }
+
+    & h5 {
+      margin: 0;
+    }
+
+    & .date {
+      padding-left: 12px;
+      font-weight: 600;
+      font-size: var(--sm);
+      color: rgba(253, 231, 231, 0.52);
+    }
+  }
+}
