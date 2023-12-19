@@ -1,0 +1,9 @@
+.cards-grid {
+  row-gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards-grid:hover .card-border {
+  opacity: 1;
+}

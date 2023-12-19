@@ -1,10 +1,8 @@
 import {useEffect} from 'preact/hooks';
 
-const useHover = () => {
+const useAnimation = () => {
   const handleHover = (event: MouseEvent) => {
-    const cards = [
-      ...document.querySelectorAll('.experience-card')
-    ] as HTMLElement[];
+    const cards = [...document.querySelectorAll('.card')] as HTMLElement[];
 
     cards.forEach(card => {
       const rect = card.getBoundingClientRect(),
@@ -17,11 +15,11 @@ const useHover = () => {
   };
 
   useEffect(() => {
-    const grid = document.querySelector('.experience-grid');
+    const grid = document.querySelector('.cards-grid') as HTMLElement;
 
     grid.addEventListener('mousemove', handleHover);
     return () => grid.removeEventListener('mousemove', handleHover);
   }, []);
 };
 
-export default useHover;
+export default useAnimation;

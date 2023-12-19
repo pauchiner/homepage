@@ -1,29 +1,5 @@
 .experience-card {
-  border-radius: 8px;
-  position: relative;
-  background: var(--secondary);
-
-  & .card-border {
-    background: radial-gradient(
-      400px circle at var(--mouse-x) var(--mouse-y),
-      rgba(247, 127, 189, 0.2),
-      transparent 40%
-    );
-    z-index: 1;
-  }
-
-  & .card-content {
-    z-index: 2;
-    margin: 1px;
-    padding: 10px;
-    display: flex;
-    cursor: default;
-    color: var(--text);
-    position: relative;
-    border-radius: inherit;
-    height: calc(100% - 1.5px);
-    background: var(--background);
-
+  & article {
     & div {
       flex: 3;
     }
@@ -48,39 +24,9 @@
   }
 }
 
-.experience-card::before {
-  background: radial-gradient(
-    800px circle at var(--mouse-x) var(--mouse-y),
-    rgba(247, 127, 189, 0.1),
-    transparent 40%
-  );
-  z-index: 3;
-}
-
-.experience-card::before,
-.experience-card > .card-border {
-  top: 0;
-  left: 0;
-  opacity: 0;
-  width: 100%;
-  content: '';
-  height: 100%;
-  position: absolute;
-  border-radius: inherit;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.experience-card:hover::before {
-  opacity: 1;
-}
-
-.experience-grid:hover .card-border {
-  opacity: 1;
-}
-
 @media (max-width: 550px) {
   .experience-card {
-    & .card-content {
+    & article {
       padding: 5px;
     }
 
