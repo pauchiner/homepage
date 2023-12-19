@@ -1,9 +1,10 @@
 ---
 interface Props {
   name: string;
+  removeBottomMargin?: boolean;
 }
 
-const {name} = Astro.props;
+const {name, removeBottomMargin} = Astro.props;
 
 if (name == null) {
   throw new Error(
@@ -14,7 +15,9 @@ if (name == null) {
 const identifier = name.toLowerCase();
 ---
 
-<section id={identifier}>
+<section
+  id={identifier}
+  class={removeBottomMargin ? 'remove-bottom-margin' : ''}>
   <h3>{name.toUpperCase()}</h3>
   <slot />
 </section>
@@ -32,6 +35,10 @@ const identifier = name.toLowerCase();
     color: var(--text);
     font-size: var(--h3);
     margin: 0px 0px 16px 0px;
+  }
+
+  .remove-bottom-margin {
+    margin-bottom: 32px;
   }
 
   @media (max-width: 650px) {
