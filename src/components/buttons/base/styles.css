@@ -1,0 +1,62 @@
+.button {
+  cursor: pointer;
+  margin-top: 16px;
+  position: relative;
+  border-radius: 10px;
+  align-self: flex-start;
+  background: var(--secondary);
+
+  & .button-border {
+    background: radial-gradient(
+      150px circle at var(--mouse-x) var(--mouse-y),
+      rgba(247, 127, 189, 0.2),
+      transparent 40%
+    );
+    z-index: 1;
+  }
+
+  & .button-content {
+    z-index: 2;
+    margin: 1px;
+    display: flex;
+    padding: 7px 12px;
+    position: relative;
+    align-items: center;
+    border-radius: inherit;
+    justify-content: center;
+    height: calc(100% - 1.5px);
+    background: var(--background);
+
+    & span {
+      color: var(--text);
+      margin-right: 10px;
+    }
+  }
+}
+
+.button::before {
+  background: radial-gradient(
+    300px circle at var(--mouse-x) var(--mouse-y),
+    rgba(247, 127, 189, 0.04),
+    transparent 40%
+  );
+  z-index: 3;
+}
+
+.button::before,
+.button > .button-border {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  content: '';
+  height: 100%;
+  position: absolute;
+  border-radius: inherit;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.button:hover::before,
+.button:hover > .button-border {
+  opacity: 1;
+}

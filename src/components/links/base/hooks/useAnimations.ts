@@ -1,6 +1,6 @@
 import {useEffect} from 'preact/hooks';
 
-const useHover = () => {
+const useAnimations = (identifier: string) => {
   const handleHover = (event: MouseEvent) => {
     const target = event.target as HTMLElement;
 
@@ -13,15 +13,11 @@ const useHover = () => {
   };
 
   useEffect(() => {
-    const buttons = [
-      ...document.querySelectorAll('.link-button')
-    ] as HTMLElement[];
+    const link = document.querySelector(`#${identifier}`) as HTMLElement;
 
-    buttons.forEach(button => {
-      button.addEventListener('mousemove', handleHover);
-      return () => button.removeEventListener('mousemove', handleHover);
-    });
+    link.addEventListener('mousemove', handleHover);
+    return () => link.removeEventListener('mousemove', handleHover);
   }, []);
 };
 
-export default useHover;
+export default useAnimations;

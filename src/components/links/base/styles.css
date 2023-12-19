@@ -1,4 +1,4 @@
-.link-button {
+.link {
   cursor: pointer;
   margin-top: 16px;
   position: relative;
@@ -35,7 +35,7 @@
   }
 }
 
-.link-button::before {
+.link::before {
   background: radial-gradient(
     300px circle at var(--mouse-x) var(--mouse-y),
     rgba(247, 127, 189, 0.04),
@@ -44,8 +44,8 @@
   z-index: 3;
 }
 
-.link-button::before,
-.link-button > .link-border {
+.link::before,
+.link > .link-border {
   top: 0;
   left: 0;
   opacity: 0;
@@ -57,7 +57,7 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-.link-button:hover::before,
-.link-button:hover > .link-border {
+.link:hover::before,
+.link:hover > .link-border {
   opacity: 1;
 }
