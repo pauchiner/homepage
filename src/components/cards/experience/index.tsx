@@ -1,3 +1,4 @@
+import useHoverAnimation from './hooks/useHover';
 import LabelsGrid from 'components/grids/labels';
 import './styles.css';
 
@@ -10,14 +11,19 @@ interface Props {
 }
 
 export const ExperienceCard = (props: Props) => {
+  useHoverAnimation();
+
   return (
     <article class="experience-card">
-      <span class="date">{props.date}</span>
-      <div>
-        <h5>{props.title}</h5>
-        <h6>{props.subtitle}</h6>
-        <p>{props.description}</p>
-        <LabelsGrid labels={props.labels} />
+      <div class="card-border" />
+      <div class="card-content">
+        <span class="date">{props.date}</span>
+        <div>
+          <h5>{props.title}</h5>
+          <h6>{props.subtitle}</h6>
+          <p>{props.description}</p>
+          <LabelsGrid labels={props.labels} />
+        </div>
       </div>
     </article>
   );
