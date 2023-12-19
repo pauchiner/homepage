@@ -1,9 +1,9 @@
 .button {
+  padding: 0;
+  border: none;
   cursor: pointer;
-  margin-top: 16px;
   position: relative;
   border-radius: 10px;
-  align-self: flex-start;
   background: var(--secondary);
 
   & .button-border {
@@ -19,17 +19,18 @@
     z-index: 2;
     margin: 1px;
     display: flex;
-    padding: 7px 12px;
+    padding: 10px 11px;
     position: relative;
     align-items: center;
     border-radius: inherit;
     justify-content: center;
-    height: calc(100% - 1.5px);
     background: var(--background);
 
     & span {
       color: var(--text);
+      font-weight: 500;
       margin-right: 10px;
+      font-size: var(--ph);
     }
   }
 }
