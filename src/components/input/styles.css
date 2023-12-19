@@ -1,0 +1,21 @@
+.input {
+  height: 0;
+
+  & input {
+    width: 165px;
+    padding: 9px 11px;
+    color: var(--text);
+    border-radius: 10px;
+    font-size: var(--sm);
+    font-family: 'Poppins';
+    caret-color: var(--primary);
+    background: var(--background);
+    border: 1.5px solid var(--secondary);
+  }
+
+  & input:-webkit-autofill:focus,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill {
+    background: red;
+  }
+}
