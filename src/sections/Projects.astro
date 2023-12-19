@@ -1,0 +1,33 @@
+---
+import {ProjectCard} from 'components/cards';
+import Section from 'layouts/Section.astro';
+import {CardsGrid} from 'components/grids';
+import {LinkButton} from 'components/buttons';
+---
+
+<Section name="projects">
+  <CardsGrid client:only className="project-cards">
+    <ProjectCard
+      date="2023"
+      title="Project Sample"
+      image="/images/projects/cafeteria.png"
+      labels={['React', 'React Native']}
+      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien."
+    />
+    <ProjectCard
+      date="2023"
+      title="Project Sample"
+      image="/images/projects/cafeteria.png"
+      labels={['React', 'React Native']}
+      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien."
+    />
+    <ProjectCard
+      date="2023"
+      title="Project Sample"
+      image="/images/projects/cafeteria.png"
+      labels={['React', 'React Native']}
+      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien."
+    />
+  </CardsGrid>
+  <LinkButton href="/projects">Projects Archive</LinkButton>
+</Section>
