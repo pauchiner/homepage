@@ -1,4 +1,5 @@
 export {SocialNetworks} from './base/variants';
+export {CardsGrid} from './cards';
 export {
   FrameworksSkills,
   LanguagesSkills,
