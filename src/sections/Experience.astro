@@ -1,6 +1,6 @@
 ---
 import {ExperienceCard} from 'components/cards';
-import {LinkButton} from 'components/buttons';
+import Link from 'components/links';
 import {CardsGrid} from 'components/grids';
 import Section from 'layouts/Section.astro';
 ---
@@ -22,7 +22,5 @@ import Section from 'layouts/Section.astro';
       labels={['Firebase', 'React Native', 'Typescript']}
     />
   </CardsGrid>
-  <LinkButton href="resume.pdf" target="_blank" client:only>
-    See Full Resume
-  </LinkButton>
+  <Link id="resume-link" href="resume.pdf" client:only>See Full Resume</Link>
 </Section>

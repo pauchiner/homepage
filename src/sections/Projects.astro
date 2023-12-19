@@ -2,7 +2,7 @@
 import {ProjectCard} from 'components/cards';
 import Section from 'layouts/Section.astro';
 import {CardsGrid} from 'components/grids';
-import {LinkButton} from 'components/buttons';
+import Link from 'components/links';
 ---
 
 <Section name="projects">
@@ -29,5 +29,5 @@ import {LinkButton} from 'components/buttons';
       description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien."
     />
   </CardsGrid>
-  <LinkButton href="/projects">Projects Archive</LinkButton>
+  <Link id="archive-link" href="/projects" client:only>Projects Archive</Link>
 </Section>
