@@ -1,6 +1,6 @@
 import {useEffect} from 'preact/hooks';
 
-const useAnimation = () => {
+const useAnimations = (className: string) => {
   const handleHover = (event: MouseEvent) => {
     const cards = [...document.querySelectorAll('.card')] as HTMLElement[];
 
@@ -15,11 +15,11 @@ const useAnimation = () => {
   };
 
   useEffect(() => {
-    const grid = document.querySelector('.cards-grid') as HTMLElement;
+    const grid = document.querySelector(`.${className}`) as HTMLElement;
 
     grid.addEventListener('mousemove', handleHover);
     return () => grid.removeEventListener('mousemove', handleHover);
   }, []);
 };
 
-export default useAnimation;
+export default useAnimations;
