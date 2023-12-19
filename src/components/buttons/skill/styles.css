@@ -1,6 +1,6 @@
 .skill-button {
   width: 48px;
-  height: 64px;
+  height: 68px;
   padding: 4px;
   display: flex;
   position: relative;
@@ -30,7 +30,7 @@
   & span {
     scale: 1;
     opacity: 1;
-    translate: 0px 6px;
+    translate: 0px 3px;
   }
 }
 
