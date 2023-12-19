@@ -1,7 +1,3 @@
-input {
-  caret-color: var(--primary);
-}
-
 ::selection {
   color: var(--text);
   background: var(--primary);
@@ -14,11 +10,14 @@ input {
 
 *:focus-visible {
   outline: none;
+  transition: box-shadow 0.3s ease-in;
   box-shadow: 0 0 0 2px var(--accent);
 }
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
-  background: var(--background);
+  -webkit-text-fill-color: var(--text);
+  -webkit-box-shadow: 0 0 0px 1000px var(--background) inset;
+  transition: background-color 5000s ease-in-out 0s;
 }
