@@ -13,7 +13,9 @@ const useHover = () => {
   };
 
   useEffect(() => {
-    const buttons = document.querySelectorAll('.link-button');
+    const buttons = [
+      ...document.querySelectorAll('.link-button')
+    ] as HTMLElement[];
 
     buttons.forEach(button => {
       button.addEventListener('mousemove', handleHover);
