@@ -1,7 +1,8 @@
 .card {
   position: relative;
   border-radius: 8px;
-  background: var(--secondary);
+  background: transparent;
+  transition: 0.3s background ease-in-out;
 
   & .card-border {
     background: radial-gradient(
