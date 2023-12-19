@@ -8,6 +8,7 @@ import Section from 'layouts/Section.astro';
 <Section name="experience">
   <ExperienceGrid>
     <ExperienceCard
+      client:only
       date="OCT 2023"
       title="Laboral Experience Title"
       subtitle="Junior Developer"
@@ -15,6 +16,7 @@ import Section from 'layouts/Section.astro';
       labels={['Python', 'Sphinx']}
     />
     <ExperienceCard
+      client:only
       date="2023 — 2022"
       title="Laboral Experience Title"
       subtitle="Junior Developer"
