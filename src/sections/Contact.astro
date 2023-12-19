@@ -1,0 +1,31 @@
+---
+import {FormButton} from 'components/buttons';
+import Section from 'layouts/Section.astro';
+import Input from 'components/input';
+---
+
+<Section name="contact">
+  <form>
+    <Input
+      required
+      id="name-input"
+      autocomplete="name"
+      placeholder="Your Name"
+    />
+    <Input
+      required
+      type="email"
+      id="email-input"
+      autocomplete="email"
+      placeholder="name@email.com"
+    />
+    <FormButton client:only id="contact-button">Send</FormButton>
+  </form>
+</Section>
+
+<style>
+  form {
+    display: flex;
+    gap: 22px;
+  }
+</style>
