@@ -1,9 +1,9 @@
-export interface Button {
+export interface ButtonProps {
   id: string;
   children: any;
   icon?: Element;
 }
 
-export interface BaseButton extends Button {
+export interface BaseButtonProps extends ButtonProps {
   onClick?: () => void;
 }

@@ -1,12 +1,12 @@
 import useAnimations from './hooks/useAnimations';
-import type {Button, BaseButton} from './types';
+import type {ButtonProps, BaseButtonProps} from './types';
 import './styles.css';
 
-export const Button = (props: BaseButton) => {
+export const Button = (props: BaseButtonProps) => {
   useAnimations(props.id);
 
   return (
-    <button class="button" onClick={props.onClick || undefined}>
+    <button id={props.id} class="button" onClick={props.onClick || undefined}>
       <div class="button-border" />
       <div class="button-content">
         <span>{props.children}</span>
@@ -16,11 +16,11 @@ export const Button = (props: BaseButton) => {
   );
 };
 
-export const FormButton = (props: Button) => {
+export const FormButton = (props: ButtonProps) => {
   useAnimations(props.id);
 
   return (
-    <button class="button" type="submit">
+    <button id={props.id} class="button" type="submit">
       <div class="button-border" />
       <div class="button-content">
         <span>{props.children}</span>
