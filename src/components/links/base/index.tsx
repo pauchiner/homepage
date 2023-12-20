@@ -8,6 +8,7 @@ interface Props {
   children: any;
   target?: string;
   icon?: VNode<any>;
+  removeTopMargin?: boolean;
 }
 
 export const BaseLink = (props: Props) => {
@@ -16,7 +17,7 @@ export const BaseLink = (props: Props) => {
   return (
     <a
       id={props.id}
-      class="link"
+      class={`link ${props.removeTopMargin ? 'remove-top-margin' : ''}`}
       href={props.href}
       target={props.target ?? '_self'}>
       <div class="link-border" />

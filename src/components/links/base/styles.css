@@ -61,3 +61,7 @@
 .link:hover > .link-border {
   opacity: 1;
 }
+
+.remove-top-margin {
+  margin-top: 0px;
+}
