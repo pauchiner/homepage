@@ -1,7 +1,9 @@
+import type {VNode} from 'preact';
+
 export interface ButtonProps {
   id: string;
   children: any;
-  icon?: Element;
+  icon?: VNode<any>;
 }
 
 export interface BaseButtonProps extends ButtonProps {
