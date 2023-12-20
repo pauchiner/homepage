@@ -1,12 +1,13 @@
 import useAnimations from './hooks/useAnimations';
+import type {VNode} from 'preact';
 import './styles.css';
 
 interface Props {
   id: string;
   href: string;
   children: any;
-  icon?: Element;
   target?: string;
+  icon?: VNode<any>;
 }
 
 export const BaseLink = (props: Props) => {
