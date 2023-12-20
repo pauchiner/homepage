@@ -25,7 +25,14 @@ import Input from 'components/input';
 
 <style>
   form {
-    display: flex;
     gap: 22px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  @media (max-width: 550px) {
+    form {
+      flex-direction: column;
+    }
   }
 </style>

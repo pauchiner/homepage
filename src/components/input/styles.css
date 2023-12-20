@@ -1,8 +1,6 @@
 .input {
-  height: 0;
-
   & input {
-    width: 165px;
+    width: 230px;
     padding: 9px 11px;
     color: var(--text);
     border-radius: 10px;
@@ -17,5 +15,11 @@
   input:-webkit-autofill:hover,
   input:-webkit-autofill {
     background: red;
+  }
+}
+
+@media (min-width: 550px) {
+  .input input {
+    width: 165px;
   }
 }
