@@ -1,0 +1,26 @@
+---
+import {ProjectOptions} from 'components/grids';
+import {ProjectsTable} from 'components/tables';
+import Layout from 'layouts/Layout.astro';
+---
+
+<Layout>
+  <main>
+    <h1>Projects Archive</h1>
+    <ProjectOptions client:only />
+    <ProjectsTable />
+  </main>
+</Layout>
+
+<style>
+  main {
+    width: 90%;
+  }
+
+  h1 {
+    width: 100%;
+    margin-bottom: 16px;
+    color: var(--accent);
+    text-align: flex-start;
+  }
+</style>
