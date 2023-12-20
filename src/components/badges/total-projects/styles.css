@@ -13,4 +13,8 @@
     margin-left: 5px;
     font-weight: 700;
   }
+
+  & p {
+    white-space: nowrap;
+  }
 }
