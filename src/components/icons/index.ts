@@ -20,6 +20,9 @@ export {FirebaseIcon} from './others/firebase';
 export {VercelIcon} from './others/vercel';
 export {GitIcon} from './others/git';
 
+//Navigation
+export {BackIcon} from './navigation/back';
+
 // Socials
 export {InstagramIcon} from './socials/instagram';
 export {SpotifyIcon} from './socials/spotify';
