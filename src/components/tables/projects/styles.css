@@ -1,0 +1,52 @@
+.projects-table {
+  width: 100%;
+  margin: 40px 0px;
+  border-collapse: collapse;
+
+  & th {
+    text-align: left;
+    padding-bottom: 7px;
+
+    & svg {
+      vertical-align: middle;
+    }
+
+    & span {
+      margin-left: 3px;
+      font-weight: 600;
+      font-size: var(--ph);
+      vertical-align: middle;
+    }
+  }
+
+  & td {
+    padding: 12.5px 0px;
+    border-top: 1.5px solid var(--secondary);
+  }
+}
+
+.table-year {
+  opacity: 0.5;
+  font-weight: 700;
+  font-size: var(--ph);
+}
+
+.table-name {
+  font-weight: 400;
+  font-size: var(--ph);
+}
+
+.table-link {
+  & a {
+    color: var(--primary);
+  }
+}
+
+@media (max-width: 550px) {
+  th:nth-child(3),
+  td:nth-child(3),
+  th:nth-child(4),
+  td:nth-child(4) {
+    display: none;
+  }
+}
