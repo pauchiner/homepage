@@ -13,8 +13,10 @@ interface Props {
 export const ProjectCard = (props: Props) => {
   return (
     <BaseCard class="project-card">
-      <img src={props.image} />
-      <div>
+      <div class="image">
+        <img src={props.image} />
+      </div>
+      <div class="content">
         <h5>
           {props.title}
           <span class="date">{props.date}</span>

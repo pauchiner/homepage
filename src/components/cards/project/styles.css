@@ -2,6 +2,12 @@
   & article {
     align-items: center;
 
+    & .image {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
     & img {
       width: 200px;
       height: 200px;
@@ -18,6 +24,29 @@
       font-weight: 600;
       font-size: var(--sm);
       color: rgba(253, 231, 231, 0.52);
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .project-card {
+    & article {
+      flex-direction: column;
+
+      & .image {
+        height: 115px;
+        overflow: hidden;
+        margin-bottom: 16px;
+        justify-content: flex-start;
+      }
+
+      & .content {
+        align-items: center;
+      }
+
+      & p {
+        max-width: 90%;
+      }
     }
   }
 }
