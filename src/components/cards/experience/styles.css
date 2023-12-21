@@ -17,7 +17,7 @@
     & .date {
       flex: 1;
       opacity: 0.55;
-      margin: 5px 0px;
+      margin: 5px 10px 5px 0px;
       font-weight: 500;
       font-size: var(--h6);
     }
@@ -28,6 +28,7 @@
   .experience-card {
     & article {
       padding: 5px;
+      flex-direction: column;
     }
 
     & .date {
