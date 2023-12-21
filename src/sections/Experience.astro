@@ -23,4 +23,18 @@ import Section from 'layouts/Section.astro';
     />
   </CardsGrid>
   <Link id="resume-link" href="resume.pdf" client:only>See Full Resume</Link>
+  <div></div>
 </Section>
+
+<style>
+  div {
+    height: 0px;
+  }
+
+  @media (max-width: 650px) {
+    div {
+      width: 100%;
+      height: 40px;
+    }
+  }
+</style>
