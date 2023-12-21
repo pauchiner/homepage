@@ -14,7 +14,7 @@ export const ProjectCard = (props: Props) => {
   return (
     <BaseCard class="project-card">
       <div class="image">
-        <img src={props.image} />
+        <img src={props.image} alt="project preview" />
       </div>
       <div class="content">
         <h5>
