@@ -7,6 +7,8 @@ export const Input = (props: InputProps) => {
       <input
         id={props.id}
         type={props.type}
+        value={props.value}
+        onChange={props.onChange}
         required={props.required}
         placeholder={props.placeholder}
         autocomplete={props.autocomplete}
@@ -16,9 +18,11 @@ export const Input = (props: InputProps) => {
 };
 
 Input.defaultProps = {
+  value: '',
   type: 'text',
   required: false,
   placeholder: '',
+  onChange: () => {},
   autocomplete: 'off'
 };
 
