@@ -21,6 +21,7 @@ export {VercelIcon} from './others/vercel';
 export {GitIcon} from './others/git';
 
 //Navigation
+export {SendIcon} from './navigation/send';
 export {BackIcon} from './navigation/back';
 
 // Socials
