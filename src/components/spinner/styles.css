@@ -1,0 +1,45 @@
+.spinner {
+  width: 65px;
+  height: 18.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fade 0.3s ease-out;
+  transition: width 0.1s ease-in-out;
+
+  & svg {
+    height: 24px;
+  }
+}
+
+.loading {
+  color: var(--primary);
+
+  & svg {
+    animation: spin 0.6s linear infinite;
+  }
+}
+
+.done {
+  color: var(--success);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
