@@ -1,0 +1,72 @@
+.alert {
+  width: 95%;
+  margin: 32px 0px;
+  display: flex;
+  padding: 0px 8px;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: flex-start;
+  border: 1.5px solid var(--secondary);
+
+  & .icon svg {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+  }
+
+  & p {
+    text-wrap: wrap;
+  }
+}
+
+.info {
+  border: 1.5px solid rgba(49, 130, 206, 0.2);
+  background: 1.5px solid rgba(49, 130, 206, 0.1);
+
+  & p {
+    color: #3182ce;
+  }
+
+  & svg {
+    color: #3182ce;
+  }
+}
+
+.warning {
+  border: 1.5px solid rgba(221, 107, 32, 0.2);
+  background: 1.5px solid rgba(221, 107, 32, 0.1);
+
+  & p {
+    color: #dd6b20;
+  }
+
+  & svg {
+    color: #dd6b20;
+  }
+}
+
+.success {
+  border: 1.5px solid rgba(56, 161, 105, 0.2);
+  background: 1.5px solid rgba(56, 161, 105, 0.1);
+
+  & p {
+    color: #38a169;
+  }
+
+  & svg {
+    color: #38a169;
+  }
+}
+
+.error {
+  border: 1.5px solid rgba(229, 62, 62, 0.2);
+  background: 1.5px solid rgba(229, 62, 62, 0.1);
+
+  & p {
+    color: #e53e3e;
+  }
+
+  & svg {
+    color: #e53e3e;
+  }
+}
