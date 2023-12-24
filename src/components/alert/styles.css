@@ -24,11 +24,11 @@
   background: 1.5px solid rgba(49, 130, 206, 0.1);
 
   & p {
-    color: #3182ce;
+    color: var(--info);
   }
 
   & svg {
-    color: #3182ce;
+    color: var(--info);
   }
 }
 
@@ -37,11 +37,11 @@
   background: 1.5px solid rgba(221, 107, 32, 0.1);
 
   & p {
-    color: #dd6b20;
+    color: var(--warning);
   }
 
   & svg {
-    color: #dd6b20;
+    color: var(--warning);
   }
 }
 
@@ -50,11 +50,11 @@
   background: 1.5px solid rgba(56, 161, 105, 0.1);
 
   & p {
-    color: #38a169;
+    color: var(--success);
   }
 
   & svg {
-    color: #38a169;
+    color: var(--success);
   }
 }
 
@@ -63,10 +63,10 @@
   background: 1.5px solid rgba(229, 62, 62, 0.1);
 
   & p {
-    color: #e53e3e;
+    color: var(--error);
   }
 
   & svg {
-    color: #e53e3e;
+    color: var(--error);
   }
 }
