@@ -1,0 +1,11 @@
+.contact-form {
+  gap: 22px;
+  display: flex;
+  align-items: flex-start;
+}
+
+@media (max-width: 550px) {
+  .contact-form {
+    flex-direction: column;
+  }
+}
