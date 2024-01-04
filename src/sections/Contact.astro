@@ -1,38 +1,10 @@
 ---
-import {FormButton} from 'components/buttons';
 import Section from 'layouts/Section.astro';
-import Input from 'components/input';
+import ContactForm from 'components/form';
+
+const url = import.meta.env.CONTACT_FORM_ENDPOINT;
 ---
 
 <Section name="contact" removeBottomMargin>
-  <form>
-    <Input
-      required
-      id="name-input"
-      autocomplete="name"
-      placeholder="Your Name"
-    />
-    <Input
-      required
-      type="email"
-      id="email-input"
-      autocomplete="email"
-      placeholder="name@email.com"
-    />
-    <FormButton client:only id="contact-button">Send</FormButton>
-  </form>
+  <ContactForm url={url} client:only />
 </Section>
-
-<style>
-  form {
-    gap: 22px;
-    display: flex;
-    align-items: flex-start;
-  }
-
-  @media (max-width: 550px) {
-    form {
-      flex-direction: column;
-    }
-  }
-</style>
