@@ -1,11 +1,15 @@
 import LabelsGrid from 'components/grids/labels';
+import Link from './link';
+
+type LinkType = 'github' | 'no-link' | 'other';
 
 interface Props {
   year: string;
   name: string;
-  link: string;
   href: string;
   labels: string[];
+  linkName: string;
+  linkType: LinkType;
 }
 
 const Item = (props: Props) => (
@@ -16,11 +20,19 @@ const Item = (props: Props) => (
       <LabelsGrid labels={props.labels} />
     </td>
     <td class="table-link">
-      <a href={props.href} tabindex={-1} target="_blank">
-        {props.link}
-      </a>
+      <Link
+        linkType={props.linkType}
+        linkName={props.linkName}
+        href={props.href}
+      />
     </td>
   </tr>
 );
+
+Item.defaultProps = {
+  linkType: 'no-link',
+  linkName: '',
+  href: ''
+};
 
 export default Item;

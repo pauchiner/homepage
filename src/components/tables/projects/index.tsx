@@ -10,13 +10,14 @@ export const ProjectsTable = () => {
         <Item
           year="2024"
           name="Homepage"
-          link="Github"
+          linkType="github"
           labels={['Astro', 'Preact']}
           href="https://github.com/pauchiner/homepage"
         />
         <Item
           year="2022"
-          link="Github"
+          linkType="other"
+          linkName="Medium"
           name="Pomodoro Timer"
           labels={['Electron', 'React']}
           href="https://github.com/pauchiner/pomodoro-timer"
