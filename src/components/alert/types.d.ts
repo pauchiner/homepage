@@ -5,6 +5,8 @@ export interface AlertIconProps {
 }
 
 export interface AlertProps {
+  id: string;
   type: AlertType;
   children: any;
+  visible: boolean;
 }

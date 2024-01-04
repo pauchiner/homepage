@@ -1,12 +1,13 @@
 .alert {
   width: 95%;
-  margin: 32px 0px;
+  margin: 32px 0px 0px 0px;
   display: flex;
   padding: 0px 8px;
   align-items: center;
   border-radius: 10px;
   justify-content: flex-start;
   border: 1.5px solid var(--secondary);
+  animation: fade 0.4s ease-in-out;
 
   & .icon svg {
     width: 24px;
@@ -68,5 +69,16 @@
 
   & svg {
     color: var(--error);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: scaleY(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scaleY(1);
   }
 }
