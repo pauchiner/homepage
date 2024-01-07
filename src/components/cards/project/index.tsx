@@ -17,10 +17,10 @@ export const ProjectCard = (props: Props) => {
         <img src={props.image} alt="project preview" />
       </div>
       <div class="content">
-        <h5>
+        <h4>
           {props.title}
           <span class="date">{props.date}</span>
-        </h5>
+        </h4>
         <p>{props.description}</p>
         <LabelsGrid labels={props.labels} />
       </div>

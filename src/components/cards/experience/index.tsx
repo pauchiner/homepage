@@ -15,8 +15,8 @@ export const ExperienceCard = (props: Props) => {
     <BaseCard class="experience-card">
       <span class="date">{props.date}</span>
       <div>
-        <h5>{props.title}</h5>
-        <h6>{props.subtitle}</h6>
+        <h4>{props.title}</h4>
+        <h5>{props.subtitle}</h5>
         <p>{props.description}</p>
         <LabelsGrid labels={props.labels} />
       </div>
