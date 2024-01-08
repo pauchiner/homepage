@@ -21,6 +21,16 @@
       font-weight: 500;
       font-size: var(--h6);
     }
+
+    & ul {
+      max-width: 90%;
+      padding-left: 0px;
+
+      & li {
+        list-style-type: none;
+        margin: 15px 0;
+      }
+    }
   }
 }
 

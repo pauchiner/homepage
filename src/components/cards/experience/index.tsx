@@ -7,7 +7,7 @@ interface Props {
   title: string;
   labels: string[];
   subtitle: string;
-  description: string;
+  children: any;
 }
 
 export const ExperienceCard = (props: Props) => {
@@ -17,7 +17,7 @@ export const ExperienceCard = (props: Props) => {
       <div>
         <h4>{props.title}</h4>
         <h5>{props.subtitle}</h5>
-        <p>{props.description}</p>
+        <p>{props.children}</p>
         <LabelsGrid labels={props.labels} />
       </div>
     </BaseCard>
