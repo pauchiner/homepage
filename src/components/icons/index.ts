@@ -16,8 +16,10 @@ export {HTMLIcon} from './languages/html';
 export {CSSIcon} from './languages/css';
 
 // Other Tools
+export {GoogleCloudIcon} from './others/google-cloud';
 export {FirebaseIcon} from './others/firebase';
 export {VercelIcon} from './others/vercel';
+export {FigmaIcon} from './others/figma';
 export {GitIcon} from './others/git';
 
 //Navigation
