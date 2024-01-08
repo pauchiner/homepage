@@ -8,5 +8,9 @@ import preact from '@astrojs/preact';
 export default defineConfig({
   integrations: [preact()],
   output: "server",
-  adapter: vercel()
+  adapter: vercel({
+    webAnalytics: {
+      enabled: true
+    }
+  })
 });
