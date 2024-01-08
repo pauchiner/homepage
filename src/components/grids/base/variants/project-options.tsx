@@ -5,7 +5,7 @@ import BaseGrid from '..';
 
 export const ProjectOptions = () => (
   <BaseGrid>
-    <TotalProjectsBadge>11</TotalProjectsBadge>
+    <TotalProjectsBadge>13</TotalProjectsBadge>
     <Link id="back-button" href="/" icon={<BackIcon />} removeTopMargin>
       Back
     </Link>
