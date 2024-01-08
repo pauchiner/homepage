@@ -9,10 +9,6 @@ export default defineConfig({
   integrations: [preact()],
   output: "server",
   adapter: vercel({
-    analysis: true,
-    speedInsights: {
-      enabled: true
-    },
     webAnalytics: {
       enabled: true
     }
