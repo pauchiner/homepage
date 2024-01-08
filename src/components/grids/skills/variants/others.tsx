@@ -1,4 +1,10 @@
-import {FirebaseIcon, GitIcon, VercelIcon} from 'components/icons';
+import {
+  FigmaIcon,
+  FirebaseIcon,
+  GitIcon,
+  GoogleCloudIcon,
+  VercelIcon
+} from 'components/icons';
 import {SkillButton} from 'components/buttons';
 import SkillsGrid from '..';
 
@@ -10,6 +16,12 @@ export const OthersSkills = () => {
       </SkillButton>
       <SkillButton name="Firebase" href="https://firebase.google.com">
         <FirebaseIcon />
+      </SkillButton>
+      <SkillButton name="Figma" href="https://figma.com">
+        <FigmaIcon />
+      </SkillButton>
+      <SkillButton name="Google Cloud" href="https://cloud.google.com">
+        <GoogleCloudIcon />
       </SkillButton>
       <SkillButton name="Vercel" href="https://vercel.com">
         <VercelIcon />
