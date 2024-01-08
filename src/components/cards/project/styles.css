@@ -3,16 +3,22 @@
     align-items: center;
 
     & .image {
+      flex: 1;
       width: 100%;
       display: flex;
       justify-content: center;
+    }
+
+    & .content {
+      flex: 3;
     }
 
     & img {
       width: 200px;
       height: 200px;
       margin-right: 17px;
-      border-radius: 10px;
+      border-radius: 11px;
+      transition: border-radius 0.1s ease-in;
     }
 
     & h4 {
@@ -31,16 +37,23 @@
 @media (max-width: 550px) {
   .project-card {
     & article {
+      align-items: flex-start;
       flex-direction: column;
 
       & .image {
+        flex: none;
         height: 115px;
         overflow: hidden;
         margin-bottom: 16px;
         justify-content: flex-start;
       }
 
+      & img {
+        border-radius: 6px;
+      }
+
       & .content {
+        flex: none;
         align-items: center;
       }
 

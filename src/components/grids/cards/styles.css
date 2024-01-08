@@ -11,5 +11,9 @@
 
   .cards-grid:hover .card {
     background: var(--secondary);
+
+    & img {
+      border-radius: 6px;
+    }
   }
 }
