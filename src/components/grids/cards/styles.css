@@ -4,10 +4,12 @@
   flex-direction: column;
 }
 
-.cards-grid:hover .card-border {
-  opacity: 1;
-}
+@media (min-width: 550px) {
+  .cards-grid:hover .card-border {
+    opacity: 1;
+  }
 
-.cards-grid:hover .card {
-  background: var(--secondary);
+  .cards-grid:hover .card {
+    background: var(--secondary);
+  }
 }

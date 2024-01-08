@@ -49,6 +49,8 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-.card:hover::before {
-  opacity: 1;
+@media (min-width: 550px) {
+  .card:hover::before {
+    opacity: 1;
+  }
 }
