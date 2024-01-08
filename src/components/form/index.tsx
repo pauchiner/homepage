@@ -38,7 +38,10 @@ const ContactForm = (props: Props) => {
           Send
         </FormButton>
       </form>
-      <Alert id="contact-form-alert" visible={status.info.message} type="error">
+      <Alert
+        visible={status.info.message !== ''}
+        id="contact-form-alert"
+        type="error">
         {status.info.message}
       </Alert>
     </>

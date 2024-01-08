@@ -1,4 +1,3 @@
-import type {FormButtonProps} from '../base/types';
 import {SendIcon} from 'components/icons';
 import Spinner from 'components/spinner';
 

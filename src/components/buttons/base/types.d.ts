@@ -11,7 +11,6 @@ export interface BaseButtonProps extends ButtonProps {
 }
 
 export interface FormButtonProps extends ButtonProps {
-  error: boolean;
   submitted: boolean;
   submitting: boolean;
 }
