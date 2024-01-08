@@ -12,7 +12,7 @@
     "preview": "astro preview"
   },
   "dependencies": {
-    "@astrojs/preact": "3.0.1",
+    "@astrojs/preact": "3.1.0",
     "@astrojs/vercel": "6.1.2",
     "astro": "4.1.1",
     "preact": "10.19.3"
