@@ -4,12 +4,12 @@
       flex: 3;
     }
 
-    & h5 {
+    & h4 {
       margin: 0;
       font-size: var(--h4);
     }
 
-    & h6 {
+    & h5 {
       margin: 0;
       font-weight: 400;
     }
