@@ -9,18 +9,28 @@ import Section from 'layouts/Section.astro';
   <CardsGrid client:only className="experience-cards">
     <ExperienceCard
       date="OCT 2023"
-      title="Laboral Experience Title"
-      subtitle="Junior Developer"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus."
-      labels={['Python', 'Sphinx']}
-    />
+      title="Iberdrola Nuclear Plant"
+      subtitle="Technical Assistant"
+      labels={['IT Support', 'Python', 'Sphinx']}>
+      <ul>
+        <li>
+          Participated on technical processes of the biannual refueling of the
+          nuclear station.
+        </li>
+        <li>
+          Build and shipped a tool in python to improved efficiency and speed of
+          those tech processes.
+        </li>
+      </ul>
+    </ExperienceCard>
     <ExperienceCard
       date="2023 — 2022"
-      title="Laboral Experience Title"
-      subtitle="Junior Developer"
-      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus."
-      labels={['Firebase', 'React Native', 'Typescript']}
-    />
+      title="Miguel Ballesteros Institute"
+      subtitle="Full-Stack Developer"
+      labels={['Firebase', 'React Native', 'Express', 'Typescript']}>
+      Build a full shopping app (frontend & backend) that improved lunch sales &
+      efficiency.
+    </ExperienceCard>
   </CardsGrid>
   <Link id="resume-link" href="resume.pdf" target="_blank" client:only>
     See Full Resume
