@@ -8,8 +8,7 @@ const Footer = () => {
       <Divider />
       <p>
         Designed with <Link href="https://figma.com">Figma</Link>, Built with{' '}
-        <Link href="https://astro.build">Astro</Link> and{' '}
-        <Link href="https://preactjs.com">Preact</Link>, Deployed with{' '}
+        <Link href="https://astro.build">Astro</Link>, Deployed with{' '}
         <Link href="https://vercel.com">Vercel</Link>.
       </p>
     </footer>
