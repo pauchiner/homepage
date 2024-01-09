@@ -1,3 +1,7 @@
+/* Load the fonts using a GDPR compliant CDN
+@import url(https://fonts.bunny.net/css?family=poppins:200,400,500,600,700);
+*/
+
 /* Global Scale Vars */
 :root {
   --h1: 2.986rem;
@@ -65,4 +69,41 @@ p {
   text-wrap: pretty;
   color: var(--text);
   font-size: var(--ph);
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url('/fonts/Poppins-ExtraLight.woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url('/fonts/Poppins-Regular.woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url('/fonts/Poppins-Medium.woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url('/fonts/Poppins-SemiBold.woff2');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url('/fonts/Poppins-Bold.woff2');
+  font-weight: 700;
+  font-style: normal;
 }
