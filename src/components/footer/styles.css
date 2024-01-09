@@ -6,9 +6,9 @@ footer {
 }
 
 footer p {
-  text-wrap: pretty;
+  text-wrap: balance;
   text-align: center;
-  max-width: 90%;
+  max-width: 97%;
 }
 
 footer a {
