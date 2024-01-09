@@ -59,9 +59,6 @@ const useForm = (url: string) => {
         headers: {Accept: 'application/json'}
       }).then(response => {
         handleServerResponse(response.ok, response.statusText);
-        console.log('STATUS: ', status);
-        console.log('RESPONSE: ', response);
-        console.log('INPUTS:', inputs);
       });
     },
     [inputs, handleServerResponse]
