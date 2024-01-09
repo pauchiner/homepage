@@ -1,13 +1,13 @@
 import {defineConfig} from 'astro/config';
 
 // Plugins
-import vercel from '@astrojs/vercel/static';
+import vercel from '@astrojs/vercel/serverless';
 import preact from '@astrojs/preact';
 
 // https://astro.build/config
 export default defineConfig({
   integrations: [preact()],
-  output: 'static',
+  output: 'hybrid',
   adapter: vercel({
     webAnalytics: {
       enabled: true
