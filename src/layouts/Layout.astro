@@ -1,7 +1,12 @@
+---
+const {name} = Astro.props;
+const title = name ?? 'Pau García Chiner';
+---
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Pau García Chiner</title>
+    <title>{title}</title>
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content="Pau García Chiner official webpage." />
     <link rel="icon" type="image/png" href="images/favicon/favicon.png" />
