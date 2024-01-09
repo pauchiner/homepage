@@ -1,5 +1,4 @@
 import {LoadingIcon, DoneIcon} from 'components/icons';
-import useAnimations from './hooks/useAnimations';
 import type {SpinnerProps} from './types';
 import './styles.css';
 
@@ -13,8 +12,6 @@ const Icon = (props: SpinnerProps) => {
 };
 
 export const Spinner = (props: SpinnerProps) => {
-  useAnimations(props.state);
-
   return (
     <div class={`spinner ${props.state}`}>
       <Icon state={props.state} />
