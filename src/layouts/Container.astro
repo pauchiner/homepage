@@ -2,7 +2,7 @@
 const {maxWidth, expandContent} = Astro.props;
 
 const widthValue = expandContent ? '100%' : 'auto';
-const maxWidthValue = maxWidth ?? 600;
+const maxWidthValue = `${maxWidth ?? 600}px`;
 ---
 
 <div>
