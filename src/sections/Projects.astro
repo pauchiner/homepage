@@ -6,7 +6,7 @@ import {BaseLink} from 'components/links';
 ---
 
 <Section name="projects">
-  <CardsGrid client:idle className="project-cards">
+  <CardsGrid client:visible className="project-cards">
     <ProjectCard
       date="2023"
       title="Cafeteria"
@@ -29,5 +29,7 @@ import {BaseLink} from 'components/links';
       description="A simple desktop app of the youtube music web player"
     />
   </CardsGrid>
-  <BaseLink id="archive-link" href="/projects" client:idle>Projects Archive</BaseLink>
+  <BaseLink id="archive-link" href="/projects" client:visible>
+    Projects Archive
+  </BaseLink>
 </Section>
