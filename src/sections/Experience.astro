@@ -1,12 +1,12 @@
 ---
 import {ExperienceCard} from 'components/cards';
-import Link from 'components/links';
+import {BaseLink} from 'components/links';
 import {CardsGrid} from 'components/grids';
 import Section from 'layouts/Section.astro';
 ---
 
 <Section name="experience">
-  <CardsGrid client:only className="experience-cards">
+  <CardsGrid client:idle className="experience-cards">
     <ExperienceCard
       date="OCT 2023"
       title="Iberdrola Nuclear Plant"
@@ -36,9 +36,9 @@ import Section from 'layouts/Section.astro';
       </ul>
     </ExperienceCard>
   </CardsGrid>
-  <Link id="resume-link" href="resume.pdf" target="_blank" client:only>
+  <BaseLink id="resume-link" href="resume.pdf" target="_blank" client:idle>
     See Full Resume
-  </Link>
+  </BaseLink>
   <div id="heading-space-gap"></div>
 </Section>
 

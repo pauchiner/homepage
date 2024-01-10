@@ -2,11 +2,11 @@
 import {ProjectCard} from 'components/cards';
 import Section from 'layouts/Section.astro';
 import {CardsGrid} from 'components/grids';
-import Link from 'components/links';
+import {BaseLink} from 'components/links';
 ---
 
 <Section name="projects">
-  <CardsGrid client:only className="project-cards">
+  <CardsGrid client:idle className="project-cards">
     <ProjectCard
       date="2023"
       title="Cafeteria"
@@ -29,5 +29,5 @@ import Link from 'components/links';
       description="A simple desktop app of the youtube music web player"
     />
   </CardsGrid>
-  <Link id="archive-link" href="/projects" client:only>Projects Archive</Link>
+  <BaseLink id="archive-link" href="/projects" client:idle>Projects Archive</BaseLink>
 </Section>
