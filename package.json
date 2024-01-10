@@ -18,7 +18,7 @@
     "preact": "10.19.3"
   },
   "devDependencies": {
-    "@typescript-eslint/parser": "6.18.0",
+    "@typescript-eslint/parser": "6.18.1",
     "eslint": "8.56.0",
     "eslint-plugin-astro": "0.31.0",
     "prettier": "3.1.1",
