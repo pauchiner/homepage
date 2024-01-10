@@ -1,0 +1,47 @@
+---
+import {BackLink} from 'components/links';
+import Layout from 'layouts/Layout.astro';
+---
+
+<Layout name="Archive | Pau García Chiner">
+  <main>
+    <h1>404</h1>
+    <h2>OOPS! NOTHING WAS FOUND</h2>
+    <div>
+      <BackLink client:idle>Back To Home</BackLink>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  main {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  div {
+    margin-top: 20px;
+    display: flex;
+    align-items: stretch;
+  }
+
+  h1 {
+    color: var(--accent);
+    font-size: 6.45rem;
+    margin-bottom: 0px;
+    font-weight: 600;
+    margin-top: 0px;
+  }
+
+  h2 {
+    font-size: var(--h3);
+    text-align: center;
+    font-weight: 400;
+    margin-top: 0;
+  }
+</style>
