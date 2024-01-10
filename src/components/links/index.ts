@@ -1,3 +1,2 @@
-import {BaseLink} from './base';
-
-export default BaseLink;
+export {BackLink} from './back';
+export {BaseLink} from './base';
