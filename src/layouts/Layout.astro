@@ -1,4 +1,6 @@
 ---
+import SpeedInsights from "@vercel/speed-insights/astro";
+
 const {name} = Astro.props;
 const title = name ?? 'Pau García Chiner';
 ---
@@ -55,32 +57,38 @@ const title = name ?? 'Pau García Chiner';
       sizes="16x16"
       href="images/favicon/favicon-16x16.png"
     />
+    <script is:inline>
+      //@ts-ignore
+      function speedInsightsBeforeSend(data) {
+        console.log('Speed Insights before send', data);
+        return data;
+      }
+    </script>
+    <SpeedInsights />
   </head>
   <body>
     <slot />
-  </body>
+  </body><style is:global>
+    @import '../styles/fonts.css';
+    @import '../styles/colors.css';
+    @import '../styles/overrides.css';
+
+    html {
+      margin: 0;
+      display: flex;
+      color: var(--text);
+      justify-content: center;
+      background: var(--background);
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  </style>
 </html>
-
-<style is:global>
-  @import '../styles/fonts.css';
-  @import '../styles/colors.css';
-  @import '../styles/overrides.css';
-
-  html {
-    margin: 0;
-    display: flex;
-    color: var(--text);
-    justify-content: center;
-    background: var(--background);
-    font-family: 'Poppins', sans-serif;
-  }
-
-  body {
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-</style>
