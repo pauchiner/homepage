@@ -1,18 +1,21 @@
 ---
-const {maxWidth} = Astro.props;
-const width = maxWidth ?? 600;
+const {maxWidth, expandContent} = Astro.props;
+
+const widthValue = expandContent ? '100%' : 'auto';
+const maxWidthValue = maxWidth ?? 600;
 ---
 
-<div style={`max-width: ${width}px`}>
+<div>
   <slot />
 </div>
 
-<style>
+<style define:vars={{maxWidth: maxWidthValue, width: widthValue}}>
   div {
-    width: 100%;
     height: 100%;
     display: flex;
     margin: 0px 20px;
+    width: var(--width);
     flex-direction: column;
+    max-width: var(--maxWidth);
   }
 </style>
