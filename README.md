@@ -1,3 +1,5 @@
-<img width="512px"  src="https://github.com/pauchiner/homepage/blob/main/.github/images/showcase.png"/>
+<div align="center">
+  <img width="512px"  src="https://github.com/pauchiner/homepage/blob/main/.github/images/showcase.png"/>
 
-Designed in [Figma](https://figma.com), Built with [Astro](https://astro.build) and [Preact](https://preactjs.com), Deployed on [Vercel](https://vercel.com).
+  <p>Designed in <a href="https://figma.com" target="_blank">Figma</a>, Built with <a href="https://astro.build" target="_blank">Astro</a> and <a href="https://preactjs.com" target="_blank">Preact</a>, Deployed on <a href="https://vercel.com" target="_blank">Vercel</a>.
+</div>
