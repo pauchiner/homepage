@@ -24,6 +24,7 @@ export {GitIcon} from './others/git';
 
 //Navigation
 export {LoadingIcon} from './navigation/loading';
+export {ArchiveIcon} from './navigation/archive';
 export {ErrorIcon} from './navigation/error';
 export {InfoIcon} from './navigation/info';
 export {DoneIcon} from './navigation/done';
