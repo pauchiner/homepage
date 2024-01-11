@@ -1,38 +1,27 @@
+import {TableLink, TableNameLink} from 'components/links';
 import LabelsGrid from 'components/grids/labels';
-import Link from './link';
-
-type LinkType = 'github' | 'no-link' | 'other';
 
 interface Props {
   year: string;
   name: string;
-  href: string;
+  href?: string;
   labels: string[];
-  linkName: string;
-  linkType: LinkType;
 }
 
 const Item = (props: Props) => (
   <tr>
-    <td class="table-year">{props.year}</td>
-    <td class="table-name">{props.name}</td>
-    <td class="table-labels">
+    <td class="table-year-column">{props.year}</td>
+    <td class="table-name-column">
+      <TableNameLink href={props.href}>{props.name}</TableNameLink>
+    </td>
+    <td class="table-name-column">{props.name}</td>
+    <td class="table-labels-column">
       <LabelsGrid labels={props.labels} />
     </td>
-    <td class="table-link">
-      <Link
-        linkType={props.linkType}
-        linkName={props.linkName}
-        href={props.href}
-      />
+    <td class="table-link-column">
+      <TableLink href={props.href} />
     </td>
   </tr>
 );
-
-Item.defaultProps = {
-  linkType: 'no-link',
-  linkName: '',
-  href: ''
-};
 
 export default Item;

@@ -8,93 +8,70 @@ export const ProjectsTable = () => {
       <Header />
       <tbody>
         <Item
-          year="2023 — 2024"
+          year="2024"
           name="Homepage"
-          linkType="github"
           labels={['Astro', 'Preact', 'Vercel']}
-          href="https://github.com/pauchiner/homepage"
+          href="https://pauchiner.es"
         />
         <Item
-          year="2022 — 2023"
+          year="2023"
           name="Cafeteria"
-          linkType="no-link"
           labels={['React Native', 'Firebase', 'Express']}
         />
         <Item
-          year="2021 - 2023"
+          year="2023"
           name="ChinerNvim"
-          linkType="github"
           labels={['Lua', 'Neovim', 'Docusaurus']}
           href="https://github.com/pauchiner/ChinerNvim"
         />
         <Item
-          year="SEP 2023"
-          linkType="github"
+          year="2023"
           name="Dotfiles"
           labels={['Fish', 'Tmux', 'Nvim']}
           href="https://github.com/pauchiner/dotfiles"
         />
         <Item
-          year="AUG 2023"
-          linkType="no-link"
+          year="2023"
           name="Vitaminados Chips"
           labels={['Astro', 'Tailwind']}
         />
         <Item
-          year="MAY 2023"
-          linkType="github"
+          year="2023"
           name="Youtube Music"
           labels={['Electron', 'JavaScript']}
           href="https://github.com/pauchiner/youtube-music"
         />
         <Item
-          year="MAY 2023"
-          linkType="no-link"
+          year="2023"
           name="Networks Webpage"
           labels={['Next.js', 'Chakra UI']}
         />
         <Item
-          year="OCT 2022"
-          linkType="github"
+          year="2022"
           name="Pomodoro Timer"
           labels={['Electron', 'React', 'Chakra UI']}
           href="https://github.com/pauchiner/pomodoro-timer"
         />
         <Item
-          year="JUN 2022"
-          linkType="github"
+          year="2022"
           name="Text Clock"
           labels={['React Native', 'Native Base']}
           href="https://github.com/pauchiner/text-clock"
         />
         <Item
-          year="MAY 2022"
-          linkName="Preview"
-          linkType="other"
+          year="2022"
           name="Text Clock Js"
           labels={['JavaScript', 'HTML', 'CSS']}
           href="https://pauchiner.github.io/text-clock-js"
         />
         <Item
-          year="APR 2022"
-          linkName="Preview"
-          linkType="other"
+          year="2022"
           name="Calculator Js"
           labels={['JavaScript', 'HTML', 'CSS']}
           href="https://pauchiner.github.io/calculator-js"
         />
-        <Item
-          year="MAY 2020"
-          linkType="no-link"
-          name="ZAP Extractor"
-          labels={['.NET', 'C#']}
-        />
-        <Item
-          year="APR 2020"
-          linkType="no-link"
-          name="DAT Converter"
-          labels={['.NET', 'C#']}
-        />
+        <Item year="2020" name="ZAP Extractor" labels={['.NET', 'C#']} />
+        <Item year="2020" name="DAT Converter" labels={['.NET', 'C#']} />
       </tbody>
     </table>
   );
