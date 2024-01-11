@@ -1,6 +1,3 @@
-/* Load the fonts using a GDPR compliant CDN */
-@import url(https://fonts.bunny.net/css?family=poppins:200,400,500,600,700);
-
 /* Global Scale Vars */
 :root {
   --h1: 2.986rem;
