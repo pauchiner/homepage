@@ -1,0 +1,49 @@
+.table-link {
+  opacity: 0.6;
+  font-size: var(--p);
+  color: var(--primary);
+  text-decoration: none;
+  transition: opacity 0.2s ease-in;
+
+  & span {
+    margin-right: 5px;
+  }
+
+  & svg {
+    transition: all 0.2s ease-in;
+  }
+}
+
+.table-link:hover {
+  opacity: 1;
+
+  & svg {
+    transform: translateX(2px) translateY(-1px);
+  }
+}
+
+.table-name-link {
+  color: var(--text);
+  font-size: var(--ph);
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease-in;
+
+  & span {
+    margin-right: 5px;
+  }
+
+  & svg {
+    transition: transform 0.2s ease-in;
+    color: var(--accent);
+  }
+}
+
+.hover:hover {
+  opacity: 1;
+  color: var(--accent);
+
+  & svg {
+    transform: translateX(1px) translateY(-0.5px);
+  }
+}
