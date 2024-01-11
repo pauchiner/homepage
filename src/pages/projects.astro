@@ -1,26 +1,57 @@
 ---
-import {ProjectOptions} from 'components/grids';
 import {ProjectsTable} from 'components/tables';
+import Container from 'layouts/Container.astro';
+import {BackLink} from 'components/links';
 import Layout from 'layouts/Layout.astro';
 ---
 
 <Layout name="Archive | Pau García Chiner">
-  <main>
-    <h1>Projects Archive</h1>
-    <ProjectOptions client:only />
-    <ProjectsTable />
-  </main>
+  <Container maxWidth={1200} expandContent>
+    <main>
+      <h1>Projects Archive</h1>
+      <p>
+        Here rest the projects of the last years, for obvious reasons, the
+        private projects doens't have any link to it.
+      </p>
+      <div>
+        <BackLink client:idle>Back</BackLink>
+      </div>
+      <ProjectsTable />
+    </main>
+  </Container>
 </Layout>
 
 <style>
   main {
     width: 90%;
+    display: grid;
+    margin-top: 64px;
+    align-self: center;
+  }
+
+  div {
+    display: flex;
+    align-items: stretch;
   }
 
   h1 {
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 0px;
     color: var(--accent);
     text-align: flex-start;
+  }
+
+  p {
+    opacity: 0.75;
+    max-width: 410px;
+    font-size: var(--sm);
+    margin: 8px 4px 7px 0px;
+  }
+
+  @media (max-width: 850px) {
+    main {
+      margin-top: 24px;
+      width: 92%;
+    }
   }
 </style>
