@@ -33,7 +33,7 @@ const identifier = name.toLowerCase();
   h3 {
     font-weight: 600;
     color: var(--text);
-    font-size: var(--h3);
+    font-size: var(--h4);
     margin: 0px 0px 16px 0px;
   }
 
@@ -46,9 +46,16 @@ const identifier = name.toLowerCase();
       top: 0px;
       z-index: 999;
       position: sticky;
-      padding: 5px 0px;
-      margin: unset -5px;
-      background: var(--background);
+      padding: 9px 18px 12px 14px;
+      margin: 0 -13px;
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      background: rgb(13, 1, 1);
+      background: linear-gradient(
+        180deg,
+        rgba(13, 1, 1, 1),
+        rgba(13, 1, 1, 0.5)
+      );
     }
   }
 </style>
