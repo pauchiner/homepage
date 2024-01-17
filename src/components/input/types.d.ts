@@ -5,7 +5,7 @@ export interface InputProps {
   id: string;
   type?: Type;
   value?: string;
-  required?: bool;
+  required?: boolean;
   placeholder?: string;
   onChange?: (event: Event) => void;
   autocomplete?: Autocomplete;
