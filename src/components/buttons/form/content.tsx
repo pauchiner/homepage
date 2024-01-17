@@ -1,10 +1,11 @@
+import type {ComponentChildren} from 'preact';
 import {SendIcon} from 'components/icons';
 import Spinner from 'components/spinner';
 
 interface Props {
   submitted: boolean;
   submitting: boolean;
-  children: any;
+  children: ComponentChildren;
 }
 
 const ButtonContent = (props: Props) => {

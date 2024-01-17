@@ -1,8 +1,9 @@
+import type {ComponentChildren} from 'preact';
 import './styles.css';
 
 interface Props {
   name?: string;
-  children: any;
+  children: ComponentChildren;
 }
 
 export const BaseGrid = (props: Props) => {

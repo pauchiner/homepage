@@ -1,8 +1,9 @@
+import type {ComponentChildren} from 'preact';
 import {ArchiveIcon} from 'components/icons';
 import {BaseLink} from '..';
 
 interface Props {
-  children: any;
+  children: ComponentChildren;
 }
 
 export const ProjectsLink = (props: Props) => (

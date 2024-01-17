@@ -1,14 +1,14 @@
+import type {ComponentChildren, VNode} from 'preact';
 import useAnimations from './hooks/useAnimations';
-import type {VNode} from 'preact';
 import './styles.css';
 
 interface Props {
   id: string;
   href: string;
-  children: any;
   target?: string;
-  icon?: VNode<any>;
   removeTopMargin?: boolean;
+  children: ComponentChildren;
+  icon?: VNode<ComponentChildren>;
 }
 
 export const BaseLink = (props: Props) => {

@@ -1,9 +1,10 @@
+import type {ComponentChildren} from 'preact';
 import {BackIcon} from 'components/icons';
 import {BaseLink} from '..';
 
 interface Props {
-  children: any;
   removeTopMargin?: boolean;
+  children: ComponentChildren;
 }
 
 export const BackLink = (props: Props) => (

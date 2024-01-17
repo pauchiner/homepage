@@ -1,13 +1,13 @@
-import type {VNode} from 'preact';
+import type {ComponentChildren, VNode} from 'preact';
 
 interface ButtonProps {
   id: string;
-  children: any;
+  children: ComponentChildren;
 }
 
 export interface BaseButtonProps extends ButtonProps {
-  icon?: VNode<any>;
   onClick?: () => void;
+  icon?: VNode<ComponentChildren>;
 }
 
 export interface FormButtonProps extends ButtonProps {

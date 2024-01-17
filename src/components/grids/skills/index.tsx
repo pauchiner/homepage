@@ -1,8 +1,9 @@
+import type {ComponentChildren} from 'preact';
 import './styles.css';
 
 interface Props {
   title: string;
-  children: any;
+  children: ComponentChildren;
 }
 
 export const SkillsGrid = (props: Props) => {

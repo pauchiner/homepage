@@ -1,4 +1,5 @@
 import LabelsGrid from 'components/grids/labels';
+import type {ComponentChildren} from 'preact';
 import BaseCard from '../base';
 import './styles.css';
 
@@ -7,7 +8,7 @@ interface Props {
   title: string;
   labels: string[];
   subtitle: string;
-  children: any;
+  children: ComponentChildren;
 }
 
 export const ExperienceCard = (props: Props) => {

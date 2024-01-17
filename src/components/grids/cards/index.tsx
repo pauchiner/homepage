@@ -1,9 +1,10 @@
 import useAnimations from './hooks/useAnimations';
+import type {ComponentChildren} from 'preact';
 import './styles.css';
 
 interface Props {
   className: string;
-  children: any;
+  children: ComponentChildren;
 }
 
 export const CardsGrid = (props: Props) => {

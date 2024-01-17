@@ -1,3 +1,5 @@
+import type {ComponentChildren} from 'preact';
+
 type AlertType = 'info' | 'warning' | 'success' | 'error';
 
 export interface AlertIconProps {
@@ -7,6 +9,6 @@ export interface AlertIconProps {
 export interface AlertProps {
   id: string;
   type: AlertType;
-  children: any;
   visible: boolean;
+  children: ComponentChildren;
 }

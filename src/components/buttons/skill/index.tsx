@@ -1,9 +1,10 @@
+import type {ComponentChildren} from 'preact';
 import './styles.css';
 
 interface Props {
   name: string;
   href: string;
-  children: any;
+  children: ComponentChildren;
 }
 
 export const SkillButton = (props: Props) => {

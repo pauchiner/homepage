@@ -1,6 +1,8 @@
+import type {ComponentChildren} from 'preact';
+
 interface Props {
   href: string;
-  children: any;
+  children: ComponentChildren;
 }
 
 const Link = (props: Props) => (
