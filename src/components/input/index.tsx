@@ -10,6 +10,7 @@ export const Input = (props: InputProps) => {
         value={props.value}
         onChange={props.onChange}
         required={props.required}
+        maxLength={props.maxLength}
         placeholder={props.placeholder}
         autocomplete={props.autocomplete}
       />
@@ -20,6 +21,7 @@ export const Input = (props: InputProps) => {
 Input.defaultProps = {
   value: '',
   type: 'text',
+  maxLength: 30,
   required: false,
   placeholder: '',
   onChange: () => {},
