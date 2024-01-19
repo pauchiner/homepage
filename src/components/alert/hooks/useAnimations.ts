@@ -4,7 +4,10 @@ import {useEffect} from 'preact/hooks';
 const useAnimations = (props: AlertProps) => {
   useEffect(() => {
     const alert = document.querySelector(`#${props.id}`) as HTMLElement;
-    alert.style.display = props.visible ? 'flex' : 'none';
+    alert.style.visibility = props.visible ? 'visible' : 'hidden';
+    alert.style.height = props.visible ? 'inherit' : '0px';
+    alert.style.transform = props.visible ? 'scaleY(1)' : 'scaleY(0.95)';
+    alert.style.opacity = props.visible ? '1' : '0';
   }, [props.visible]);
 };
 
