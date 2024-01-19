@@ -8,9 +8,7 @@ const Alert = (props: AlertProps) => {
 
   return (
     <div id={props.id} class={`alert ${props.type}`}>
-      <div class="icon">
-        <Icon type={props.type} />
-      </div>
+      <div class="icon">{props.children && <Icon type={props.type} />}</div>
       <p>{props.children}</p>
     </div>
   );

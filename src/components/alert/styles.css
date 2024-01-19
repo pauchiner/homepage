@@ -6,11 +6,9 @@
   padding: 0px 8px;
   align-items: center;
   border-radius: 10px;
-  transform-origin: top;
-  transform: scaleY(0.95);
   margin: 32px 0px 0px 0px;
   justify-content: flex-start;
-  transition: all 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
   border: 1.5px solid var(--secondary);
 
   & .icon svg {
