@@ -26,6 +26,7 @@ const ContactForm = (props: Props) => {
           required
           type="email"
           id="email"
+          maxLength={60}
           autocomplete="email"
           value={inputs.email}
           onChange={handleOnChange}
