@@ -1,6 +1,7 @@
 // Frameworks
 export {ReactNativeIcon} from './frameworks/react-native';
 export {ElectronIcon} from './frameworks/electron';
+export {TailwindIcon} from './frameworks/tailwind';
 export {AstroIcon} from './frameworks/astro';
 export {ReactIcon} from './frameworks/react';
 export {ReduxIcon} from './frameworks/redux';

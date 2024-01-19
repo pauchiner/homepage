@@ -3,6 +3,7 @@ import {
   FirebaseIcon,
   GitIcon,
   GoogleCloudIcon,
+  TailwindIcon,
   VercelIcon
 } from 'components/icons';
 import {SkillButton} from 'components/buttons';
@@ -14,11 +15,14 @@ export const OthersSkills = () => {
       <SkillButton name="Git" href="https://git-scm.com">
         <GitIcon />
       </SkillButton>
-      <SkillButton name="Firebase" href="https://firebase.google.com">
-        <FirebaseIcon />
-      </SkillButton>
       <SkillButton name="Figma" href="https://figma.com">
         <FigmaIcon />
+      </SkillButton>
+      <SkillButton name="Tailwind" href="https://tailwindcss.com">
+        <TailwindIcon />
+      </SkillButton>
+      <SkillButton name="Firebase" href="https://firebase.google.com">
+        <FirebaseIcon />
       </SkillButton>
       <SkillButton name="Google Cloud" href="https://cloud.google.com">
         <GoogleCloudIcon />
