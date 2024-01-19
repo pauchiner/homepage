@@ -1,4 +1,6 @@
 ---
+import {ViewTransitions} from 'astro:transitions';
+
 const {title = 'Pau García Chiner'} = Astro.props;
 ---
 
@@ -58,4 +60,5 @@ const {title = 'Pau García Chiner'} = Astro.props;
     sizes="16x16"
     href="images/favicon/favicon-16x16.png"
   />
+  <ViewTransitions fallback="none" />
 </head>
