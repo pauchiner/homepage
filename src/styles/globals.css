@@ -8,7 +8,7 @@ html {
   color: var(--text);
   justify-content: center;
   background: var(--background);
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', system-ui, sans-serif;
 }
 
 body {
@@ -18,4 +18,6 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }

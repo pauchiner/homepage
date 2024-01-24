@@ -102,16 +102,3 @@ p {
   color: var(--text);
   font-size: var(--ph);
 }
-
-/* Webkit font antialias */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-span,
-td {
-  -webkit-font-smoothing: antialiased;
-}
