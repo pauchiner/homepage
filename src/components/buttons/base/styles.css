@@ -30,7 +30,7 @@
       color: var(--text);
       font-weight: 500;
       margin-right: 10px;
-      font-size: var(--ph);
+      font-family: 'Poppins';
     }
   }
 }
