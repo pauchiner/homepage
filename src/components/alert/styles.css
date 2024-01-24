@@ -11,10 +11,14 @@
   transition: opacity 0.3s ease-out;
   border: 1.5px solid var(--secondary);
 
-  & .icon svg {
-    width: 24px;
-    height: 24px;
-    margin: 0 10px;
+  & .icon {
+    margin-top: 4px;
+
+    & svg {
+      width: 24px;
+      height: 24px;
+      margin: 0 10px;
+    }
   }
 
   & p {

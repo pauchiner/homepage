@@ -12,11 +12,19 @@ const useForm = (url: string) => {
   });
 
   const handleServerResponse = useCallback((ok: boolean, message: string) => {
+    document
+      .querySelector('#contact-form-alert')
+      ?.scrollIntoView({behavior: 'smooth'});
+
     if (ok) {
       setStatus({
         submitted: true,
         submitting: false,
-        info: {error: false, message}
+        info: {
+          error: false,
+          message:
+            'The message has been sent, I will contact you soon as possible.'
+        }
       });
       setInputs({
         name: '',

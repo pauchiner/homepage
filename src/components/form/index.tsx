@@ -1,4 +1,5 @@
-import {FormButton} from 'components/buttons';
+import {SendIcon} from 'components/icons';
+import {Button} from 'components/buttons';
 import useForm from './hooks/useForm';
 import Input from 'components/input';
 import Alert from 'components/alert';
@@ -32,17 +33,14 @@ const ContactForm = (props: Props) => {
           onChange={handleOnChange}
           placeholder="name@email.com"
         />
-        <FormButton
-          submitted={status.submitted}
-          submitting={status.submitting}
-          id="contact-button">
+        <Button icon={<SendIcon />} id="contact-button">
           Send
-        </FormButton>
+        </Button>
       </form>
       <Alert
-        visible={status.info.message !== ''}
         id="contact-form-alert"
-        type="error">
+        visible={status.info.message !== ''}
+        type={status.info.error ? 'error' : 'success'}>
         {status.info.message}
       </Alert>
     </>

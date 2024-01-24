@@ -6,8 +6,6 @@ const useAnimations = (props: AlertProps) => {
     const alert = document.querySelector(`#${props.id}`) as HTMLElement;
 
     if (props.visible) {
-      alert.scrollIntoView({behavior: 'smooth'});
-
       alert.style.transitionDuration = '0.3s';
       alert.style.visibility = 'visible';
       alert.style.height = 'inherit';
