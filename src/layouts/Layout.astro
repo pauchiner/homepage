@@ -9,5 +9,21 @@ const {title = 'Pau García Chiner'} = Astro.props;
   <Head title={title} />
   <body>
     <slot />
+    <style>
+      body {
+        transform-origin: bottom;
+        animation: appear 500ms ease-out;
+      }
+
+      @keyframes appear {
+        0%,
+        30% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
   </body>
 </html>
