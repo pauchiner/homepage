@@ -1,9 +1,9 @@
 import {SendIcon} from 'components/icons';
 import {Button} from 'components/buttons';
+import styles from './styles.module.css';
 import useForm from './hooks/useForm';
 import Input from 'components/input';
 import Alert from 'components/alert';
-import './styles.css';
 
 interface Props {
   url: string;
@@ -14,7 +14,7 @@ const ContactForm = (props: Props) => {
 
   return (
     <>
-      <form class="contact-form" onSubmit={handleSubmit}>
+      <form class={styles.form} onSubmit={handleSubmit}>
         <Input
           required
           id="name"
