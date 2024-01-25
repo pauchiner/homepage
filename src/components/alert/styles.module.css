@@ -11,18 +11,18 @@
   transition: opacity 0.3s ease-out;
   border: 1.5px solid var(--secondary);
 
-  & .icon {
-    margin-top: 4px;
-
-    & svg {
-      width: 24px;
-      height: 24px;
-      margin: 0 10px;
-    }
-  }
-
   & p {
     text-wrap: wrap;
+  }
+}
+
+.icon {
+  margin-top: 4px;
+
+  & svg {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
   }
 }
 
