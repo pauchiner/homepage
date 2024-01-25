@@ -1,6 +1,6 @@
 import type {ComponentChildren, VNode} from 'preact';
 import useAnimations from './hooks/useAnimations';
-import './styles.css';
+import styles from './styles.module.css';
 
 interface Props {
   id: string;
@@ -12,16 +12,17 @@ interface Props {
 }
 
 export const BaseLink = (props: Props) => {
+  const topMargin = props.removeTopMargin ? styles.removeTopMargin : '';
   useAnimations(props.id);
 
   return (
     <a
       id={props.id}
-      class={`link ${props.removeTopMargin ? 'remove-top-margin' : ''}`}
+      class={`${styles.link} ${topMargin}`}
       href={props.href}
       target={props.target ?? '_self'}>
-      <div class="link-border" />
-      <div class="link-content">
+      <div class={styles.border} />
+      <div class={styles.content}>
         <span>{props.children}</span>
         {props.icon ?? (
           <svg width="18" height="18" viewBox="0 0 18 18">

@@ -6,32 +6,32 @@
   text-decoration: none;
   align-self: flex-start;
   background: var(--secondary);
+}
 
-  & .link-border {
-    background: radial-gradient(
-      150px circle at var(--mouse-x) var(--mouse-y),
-      rgba(247, 127, 189, 0.2),
-      transparent 40%
-    );
-    z-index: 1;
-  }
+.border {
+  background: radial-gradient(
+    150px circle at var(--mouse-x) var(--mouse-y),
+    rgba(247, 127, 189, 0.2),
+    transparent 40%
+  );
+  z-index: 1;
+}
 
-  & .link-content {
-    z-index: 2;
-    margin: 1px;
-    display: flex;
-    padding: 7px 12px;
-    position: relative;
-    align-items: center;
-    border-radius: inherit;
-    justify-content: center;
-    height: calc(100% - 1.5px);
-    background: var(--background);
+.content {
+  z-index: 2;
+  margin: 1px;
+  display: flex;
+  padding: 7px 12px;
+  position: relative;
+  align-items: center;
+  border-radius: inherit;
+  justify-content: center;
+  height: calc(100% - 1.5px);
+  background: var(--background);
 
-    & span {
-      color: var(--text);
-      margin-right: 10px;
-    }
+  & span {
+    color: var(--text);
+    margin-right: 10px;
   }
 }
 
@@ -45,7 +45,7 @@
 }
 
 .link::before,
-.link > .link-border {
+.border {
   top: 0;
   left: 0;
   opacity: 0;
@@ -58,10 +58,10 @@
 }
 
 .link:hover::before,
-.link:hover > .link-border {
+.link:hover > .border {
   opacity: 1;
 }
 
-.remove-top-margin {
+.removeTopMargin {
   margin-top: 0px;
 }

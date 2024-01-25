@@ -1,4 +1,4 @@
-.table-link {
+.link {
   opacity: 0.6;
   font-size: var(--p);
   color: var(--primary);
@@ -14,7 +14,7 @@
   }
 }
 
-.table-link:hover {
+.link:hover {
   opacity: 1;
 
   & svg {
@@ -22,7 +22,7 @@
   }
 }
 
-.table-name-link {
+.nameLink {
   color: var(--text);
   font-size: var(--ph);
   font-weight: 500;
