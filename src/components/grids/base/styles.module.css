@@ -1,10 +1,10 @@
-.base-grid {
+.grid {
   gap: 22px;
   display: flex;
 }
 
 @media (max-width: 550px) {
-  .base-grid {
+  .grid {
     gap: 11px;
     flex-wrap: wrap;
   }

@@ -1,17 +1,12 @@
 import type {ComponentChildren} from 'preact';
-import './styles.css';
+import styles from './styles.module.css';
 
 interface Props {
-  name?: string;
   children: ComponentChildren;
 }
 
 export const BaseGrid = (props: Props) => {
-  return (
-    <div id={props.name || ''} class="base-grid">
-      {props.children}
-    </div>
-  );
+  return <div class={styles.grid}>{props.children}</div>;
 };
 
 export default BaseGrid;

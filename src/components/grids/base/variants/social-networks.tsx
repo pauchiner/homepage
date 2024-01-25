@@ -9,7 +9,7 @@ import BaseGrid from '..';
 
 export const SocialNetworks = () => {
   return (
-    <BaseGrid name="social-networks">
+    <BaseGrid>
       <SocialButton name="Github" href="https://github.com/pauchiner">
         <GithubIcon />
       </SocialButton>

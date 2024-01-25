@@ -1,4 +1,4 @@
-import './styles.css';
+import styles from './styles.module.css';
 
 interface Props {
   labels: string[];
@@ -6,9 +6,11 @@ interface Props {
 
 const LabelsGrid = (props: Props) => {
   if (!props.labels) return <></>;
-  const content = props.labels.map(text => <span class="label">{text}</span>);
+  const content = props.labels.map(text => (
+    <span class={styles.label}>{text}</span>
+  ));
 
-  return <div class="labels-grid">{content}</div>;
+  return <div class={styles.grid}>{content}</div>;
 };
 
 export default LabelsGrid;

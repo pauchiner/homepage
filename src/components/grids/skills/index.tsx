@@ -1,5 +1,5 @@
 import type {ComponentChildren} from 'preact';
-import './styles.css';
+import styles from './styles.module.css';
 
 interface Props {
   title: string;
@@ -8,9 +8,9 @@ interface Props {
 
 export const SkillsGrid = (props: Props) => {
   return (
-    <article class="skills-grid">
-      <h4>{props.title}</h4>
-      <div>{props.children}</div>
+    <article>
+      <h4 class={styles.title}>{props.title}</h4>
+      <div class={styles.grid}>{props.children}</div>
     </article>
   );
 };
