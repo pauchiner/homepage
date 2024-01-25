@@ -1,6 +1,6 @@
 import LabelsGrid from 'components/grids/labels';
+import styles from './styles.module.css';
 import BaseCard from '../base';
-import './styles.css';
 
 interface Props {
   date: string;
@@ -12,14 +12,14 @@ interface Props {
 
 export const ProjectCard = (props: Props) => {
   return (
-    <BaseCard class="project-card">
-      <div class="image">
+    <BaseCard class={styles.card}>
+      <div class={styles.image}>
         <img src={props.image} alt="project preview" loading="lazy" />
       </div>
-      <div class="content">
+      <div class={styles.content}>
         <h4>
           {props.title}
-          <span class="date">{props.date}</span>
+          <span class={styles.date}>{props.date}</span>
         </h4>
         <p>{props.description}</p>
         <LabelsGrid labels={props.labels} />
