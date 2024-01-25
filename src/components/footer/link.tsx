@@ -1,4 +1,5 @@
 import type {ComponentChildren} from 'preact';
+import styles from './styles.module.css';
 
 interface Props {
   href: string;
@@ -6,7 +7,7 @@ interface Props {
 }
 
 const Link = (props: Props) => (
-  <a tabindex={-1} href={props.href} target="_blank">
+  <a class={styles.link} tabindex={-1} href={props.href} target="_blank">
     {props.children}
   </a>
 );
