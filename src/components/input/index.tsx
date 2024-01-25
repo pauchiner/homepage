@@ -1,13 +1,14 @@
 import type {InputProps} from './types';
-import './styles.css';
+import styles from './styles.module.css';
 
 export const Input = (props: InputProps) => {
   return (
-    <label for={props.id} class="input">
+    <label for={props.id}>
       <input
         id={props.id}
         type={props.type}
         value={props.value}
+        class={styles.input}
         onChange={props.onChange}
         required={props.required}
         maxLength={props.maxLength}
