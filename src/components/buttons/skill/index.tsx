@@ -1,5 +1,5 @@
 import type {ComponentChildren} from 'preact';
-import './styles.css';
+import styles from './styles.module.css';
 
 interface Props {
   name: string;
@@ -11,12 +11,12 @@ export const SkillButton = (props: Props) => {
   return (
     <a
       aria-label={props.name}
-      class="skill-button"
+      class={styles.button}
       href={props.href}
       target="_blank"
       tabindex={-1}>
       {props.children}
-      <span>{props.name}</span>
+      <span class={styles.tooltip}>{props.name}</span>
     </a>
   );
 };

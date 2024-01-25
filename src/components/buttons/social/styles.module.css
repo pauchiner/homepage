@@ -1,4 +1,4 @@
-.social-button {
+.button {
   opacity: 0.5;
   color: var(--text);
   border-radius: 99px;
@@ -8,7 +8,7 @@
   transition: all 0.1s ease-in-out;
 }
 
-.social-button:hover {
+.button:hover {
   opacity: 1;
   scale: 1.1;
 }

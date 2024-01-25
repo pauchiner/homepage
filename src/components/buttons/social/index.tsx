@@ -1,5 +1,5 @@
 import type {ComponentChildren} from 'preact';
-import './styles.css';
+import styles from './styles.module.css';
 
 interface Props {
   name: string;
@@ -11,7 +11,7 @@ export const SocialButton = (props: Props) => {
   return (
     <a
       aria-label={props.name}
-      class="social-button"
+      class={styles.button}
       href={props.href}
       target="_blank">
       {props.children}
