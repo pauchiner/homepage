@@ -1,9 +1,13 @@
-import './styles.css';
+import styles from './styles.module.css';
 
 const Avatar = () => {
   return (
-    <div id="avatar-container">
-      <img alt="pauchiner's avatar" src="/images/avatar.webp" />
+    <div class={styles.container}>
+      <img
+        class={styles.avatar}
+        alt="pauchiner's avatar"
+        src="/images/avatar.webp"
+      />
     </div>
   );
 };
