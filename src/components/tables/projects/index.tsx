@@ -1,10 +1,10 @@
+import styles from './styles.module.css';
 import Header from './header';
 import Item from './item';
-import './styles.css';
 
 export const ProjectsTable = () => {
   return (
-    <table class="projects-table">
+    <table class={styles.table}>
       <Header />
       <tbody>
         <Item

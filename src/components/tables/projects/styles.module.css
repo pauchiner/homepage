@@ -1,4 +1,4 @@
-.projects-table {
+.table {
   width: 100%;
   margin: 40px 0px;
   border-collapse: collapse;
@@ -27,23 +27,23 @@
   }
 }
 
-.table-link-column {
+.link {
   width: 250px;
 }
 
-.table-year-column {
+.year {
   width: 70px;
   opacity: 0.5;
   font-size: var(--sm);
 }
 
-.table-name-column {
+.name {
   max-width: 120px;
   font-weight: 500;
   padding-right: 50px;
 }
 
-.table-labels-column {
+.labels {
   margin: 0 30px;
   max-width: 200px;
 }
