@@ -12,8 +12,8 @@ dependencies:
     specifier: 3.0.5
     version: 3.0.5
   '@astrojs/vercel':
-    specifier: 7.0.2
-    version: 7.0.2(astro@4.3.1)
+    specifier: 7.1.0
+    version: 7.1.0(astro@4.3.1)
   astro:
     specifier: 4.3.1
     version: 4.3.1(typescript@5.3.3)
@@ -140,8 +140,8 @@ packages:
       - supports-color
     dev: false
 
-  /@astrojs/vercel@7.0.2(astro@4.3.1):
-    resolution: {integrity: sha512-XlUNqstoGVDDk5txGF2JadSt+jK79peMeFHlH6D5u9d9yeql1Kyw2o9nPvu9nr1PMdnDrBkF82DQE06iIzXZ1Q==}
+  /@astrojs/vercel@7.1.0(astro@4.3.1):
+    resolution: {integrity: sha512-J5iskScOm90X+XSwY9f87vPhFS0fPyTq2IXn1SZrU2gAqxvdEegiAwlpf1AhMnIwP87XsAQVIoJxzLeKzNo6DQ==}
     peerDependencies:
       astro: ^4.2.0
     dependencies:
@@ -151,6 +151,7 @@ packages:
       astro: 4.3.1(typescript@5.3.3)
       esbuild: 0.19.12
       fast-glob: 3.3.2
+      minimatch: 9.0.3
       set-cookie-parser: 2.6.0
       web-vitals: 3.5.2
     transitivePeerDependencies:
@@ -1503,7 +1504,6 @@ packages:
     resolution: {integrity: sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==}
     dependencies:
       balanced-match: 1.0.2
-    dev: true
 
   /braces@3.0.2:
     resolution: {integrity: sha512-b8um+L1RzM3WDSzvhm6gIz1yfTbBt6YTlcEKAvsmqCZZFw46z626lVj9j1yEPW33H5H+lBQpZMP1k8l+78Ha0A==}
@@ -3245,7 +3245,6 @@ packages:
     engines: {node: '>=16 || 14 >=14.17'}
     dependencies:
       brace-expansion: 2.0.1
-    dev: true
 
   /minimist@1.2.8:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
