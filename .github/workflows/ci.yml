@@ -54,6 +54,7 @@ jobs:
         run: pnpm run lint
   styles:
     needs: lint
+    if: always()
     name: 💅 Styles
     runs-on: ubuntu-latest
 
