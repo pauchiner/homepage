@@ -57,6 +57,9 @@ jobs:
     name: 💅 Styles
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -75,4 +78,12 @@ jobs:
         run: pnpm install
 
       - name: Styles
-        run: pnpm prettier --check .
+        run: pnpm prettier --write .
+
+      - name: Push changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "styles: auto-format with prettier"
+          commit_user_name: "github-actions[bot]"
+          commit_user_email: "github-actions[bot]@users.noreply.github.com"
+          commit_author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
