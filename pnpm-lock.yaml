@@ -16,10 +16,10 @@ dependencies:
     version: 3.0.5
   '@astrojs/vercel':
     specifier: 7.3.0
-    version: 7.3.0(astro@4.3.2)
+    version: 7.3.0(astro@4.3.5)
   astro:
-    specifier: 4.3.2
-    version: 4.3.2(typescript@5.3.3)
+    specifier: 4.3.5
+    version: 4.3.5(typescript@5.3.3)
   preact:
     specifier: 10.19.3
     version: 10.19.3
@@ -84,6 +84,10 @@ packages:
 
   /@astrojs/compiler@2.5.2:
     resolution: {integrity: sha512-fm9HNYu1tVnJjZYHE+SdDM5k6fZKNPXS9PwT43Mf6l4HVGx8d1jQwhGQqCvLkYJJBwQ9OysiexFMt7wtNuXhmQ==}
+
+  /@astrojs/compiler@2.5.3:
+    resolution: {integrity: sha512-jzj01BRv/fmo+9Mr2FhocywGzEYiyiP2GVHje1ziGNU6c97kwhYGsnvwMkHrncAy9T9Vi54cjaMK7UE4ClX4vA==}
+    dev: false
 
   /@astrojs/internal-helpers@0.2.1:
     resolution: {integrity: sha512-06DD2ZnItMwUnH81LBLco3tWjcZ1lGU9rLCCBaeUCGYe9cI0wKyY2W3kDyoW1I6GmcWgt1fu+D1CTvz+FIKf8A==}
@@ -195,7 +199,7 @@ packages:
       - supports-color
     dev: false
 
-  /@astrojs/vercel@7.3.0(astro@4.3.2):
+  /@astrojs/vercel@7.3.0(astro@4.3.5):
     resolution: {integrity: sha512-xpGg9i+Wae8hSY/p2P+pbP5pbRbgaIbmtfO29qLndxQoDDygDf/GAaEgEd9y1qMI5Huhl0MbYbEPG5thgt82ng==}
     peerDependencies:
       astro: ^4.2.0
@@ -203,7 +207,7 @@ packages:
       '@astrojs/internal-helpers': 0.2.1
       '@vercel/analytics': 1.1.2
       '@vercel/nft': 0.24.4
-      astro: 4.3.2(typescript@5.3.3)
+      astro: 4.3.5(typescript@5.3.3)
       esbuild: 0.19.12
       fast-glob: 3.3.2
       set-cookie-parser: 2.6.0
@@ -1458,12 +1462,12 @@ packages:
       - supports-color
     dev: true
 
-  /astro@4.3.2(typescript@5.3.3):
-    resolution: {integrity: sha512-SJotHzKG/I32ruYWItMRJjtmNQh14mVS7kahu3XfYyxvo6nx08PGJBTSPbqPrW1sjeQPHwcpVDFx3yMMK2kaxQ==}
+  /astro@4.3.5(typescript@5.3.3):
+    resolution: {integrity: sha512-7jPffNlcmDO94NlkWe/hUWta/pIjlx1LVD/DZb/fyjT1Jv+7mGhKZBIjkDfeVpequW70mep8cAS5RM7Pxa0Gdg==}
     engines: {node: '>=18.14.1', npm: '>=6.14.0'}
     hasBin: true
     dependencies:
-      '@astrojs/compiler': 2.5.2
+      '@astrojs/compiler': 2.5.3
       '@astrojs/internal-helpers': 0.2.1
       '@astrojs/markdown-remark': 4.2.1
       '@astrojs/telemetry': 3.0.4
