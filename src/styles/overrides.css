@@ -8,6 +8,10 @@
   background: var(--primary);
 }
 
+:root {
+  scrollbar-color: var(--secondary) var(--background);
+}
+
 *:focus-visible {
   outline: none;
   transition: box-shadow 0.3s ease-in;
