@@ -8,6 +8,6 @@ import preact from '@astrojs/preact';
 export default defineConfig({
   site: 'https://pauchiner.es',
   integrations: [preact(), sitemap()],
-  output: 'server',
+  output: 'static',
   adapter: cloudflare()
 });
