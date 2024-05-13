@@ -1,5 +1,6 @@
 import {defineConfig} from 'astro/config';
 
+import cloudflare from '@astrojs/cloudflare';
 import sitemap from '@astrojs/sitemap';
 import preact from '@astrojs/preact';
 
@@ -7,5 +8,10 @@ import preact from '@astrojs/preact';
 export default defineConfig({
   site: 'https://pauchiner.es',
   integrations: [preact(), sitemap()],
-  output: 'static'
+  output: 'server',
+  adapter: cloudflare({
+    platformProxy: {
+      enabled: true
+    }
+  })
 });

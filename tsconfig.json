@@ -8,6 +8,9 @@
       "layouts/*": ["src/layouts/*"]
     },
     "jsx": "react-jsx",
-    "jsxImportSource": "preact"
+    "jsxImportSource": "preact",
+    "types": {
+      "@cloudflare/workers-types/2023-07-01"
+    }
   }
 }
